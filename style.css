@@ -292,6 +292,7 @@ ul { list-style: none; }
   letter-spacing: -0.02em;
   margin-bottom: 1.25rem;
   color: var(--text);
+  text-align: center;
 }
 
 .hero__title span {
@@ -303,7 +304,13 @@ ul { list-style: none; }
   color: var(--text-secondary);
   max-width: 640px;
   margin-bottom: 3rem;
+  margin-inline: auto;
   line-height: 1.9;
+  text-align: center;
+}
+
+.hero > .container {
+  text-align: center;
 }
 
 .hero__stats {
@@ -350,6 +357,7 @@ ul { list-style: none; }
 
 .section__header {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .section__tag {
@@ -366,12 +374,14 @@ ul { list-style: none; }
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text);
+  text-align: center;
 }
 
 .section__subtitle {
   margin-top: 0.75rem;
   color: var(--text-secondary);
   font-size: 0.95rem;
+  text-align: center;
 }
 
 /* ===== Summary ===== */
