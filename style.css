@@ -1120,92 +1120,6 @@ ul { list-style: none; }
   color: var(--accent-light);
 }
 
-/* ===== Popup ===== */
-.popup-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.25rem;
-  background: rgba(26, 26, 26, 0.45);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-}
-
-.popup-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.popup {
-  width: min(440px, 100%);
-  padding: 2.25rem 2rem;
-  text-align: center;
-  transform: translateY(20px) scale(0.97);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: var(--shadow-lg);
-}
-
-.popup-overlay.active .popup {
-  transform: translateY(0) scale(1);
-}
-
-.popup__icon {
-  font-size: 1.75rem;
-  color: var(--gold);
-  margin-bottom: 0.75rem;
-}
-
-.popup__title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
-
-.popup__text {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
-  line-height: 1.85;
-  margin-bottom: 1.75rem;
-}
-
-.popup__text strong {
-  color: var(--text);
-  font-weight: 700;
-}
-
-.popup__phrase {
-  display: inline;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.popup__btn {
-  width: 100%;
-  padding: 0.9rem 1.5rem;
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 100px;
-  font-family: var(--font);
-  font-size: 0.92rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.popup__btn:hover {
-  background: var(--accent-light);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(45, 74, 62, 0.25);
-}
-
 /* ===== Footer ===== */
 .footer {
   padding: 2.5rem 0;
@@ -1656,11 +1570,6 @@ ul { list-style: none; }
   .highlight-card p { font-size: 0.92rem; color: #111; }
   .media-gallery__item figcaption { padding: 0.65rem 0.85rem; font-size: 0.9rem; color: #111; }
   .media-credit { font-size: 0.85rem; color: #222; }
-
-  .popup { padding: 1.75rem 1.25rem; }
-  .popup__title { font-size: 1.2rem; color: #000; }
-  .popup__text { font-size: 1rem; margin-bottom: 1.25rem; color: #111; }
-  .popup__btn { font-size: 0.95rem; padding: 0.85rem 1rem; }
 
   /* Footer */
   .footer { padding: 1.5rem 0; }

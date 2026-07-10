@@ -92,39 +92,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
-// ===== Report Popup =====
-const reportPopup = document.getElementById('reportPopup');
-const popupClose = document.getElementById('popupClose');
-const POPUP_KEY = 'weaveReportPopupDismissed';
-
-if (reportPopup && popupClose) {
-  function openPopup() {
-    reportPopup.classList.add('active');
-    reportPopup.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closePopup() {
-    reportPopup.classList.remove('active');
-    reportPopup.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    sessionStorage.setItem(POPUP_KEY, '1');
-  }
-
-  if (!sessionStorage.getItem(POPUP_KEY)) {
-    setTimeout(openPopup, 5000);
-  }
-
-  popupClose.addEventListener('click', closePopup);
-
-  reportPopup.addEventListener('click', e => {
-    if (e.target === reportPopup) closePopup();
-  });
-
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape' && reportPopup.classList.contains('active')) {
-      closePopup();
-    }
-  });
-}
