@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="تقرير استخباراتي — شركات ومصانع الروبوتات المنزلية في سيول، كوريا الجنوبية">
+  <title>تقرير استخباراتي — شركات ومصانع الروبوتات المنزلية في سيول</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__brand">
+        <span class="nav__brand-dot"></span>
+        <span>Seoul Robotics</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" class="nav__link">Weave Robotics</a></li>
+        <li><a href="#hero" class="nav__link active">الرئيسية</a></li>
+        <li><a href="#summary" class="nav__link">الملخص</a></li>
+        <li><a href="#companies" class="nav__link">الشركات</a></li>
+        <li><a href="#samsung" class="nav__link">Samsung</a></li>
+        <li><a href="#hyodol" class="nav__link">Hyodol</a></li>
+        <li><a href="#lg" class="nav__link">LG</a></li>
+        <li><a href="#luxrobo" class="nav__link">LUXROBO</a></li>
+        <li><a href="#comparison" class="nav__link">المقارنة</a></li>
+        <li><a href="#conclusion" class="nav__link">الخلاصة</a></li>
+      </ul>
+      <a href="#companies" class="nav__cta">قراءة التقرير</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__badge">تقرير استخباراتي · آخر تحديث: يوليو 2026</div>
+      <h1 class="hero__title">تقرير استخباراتي<br><span>الروبوتات المنزلية في سيول</span></h1>
+      <p class="hero__desc">
+        تحليل استخباراتي عميق لأربع شركات كورية جنوبية — مع الأسعار والاشتراكات والعناوين،
+        وصفحة تحليل مستقلة لكل شركة.
+      </p>
+      <div class="hero__stats">
+        <div class="stat-card glass">
+          <span class="stat-card__label">الدولة</span>
+          <span class="stat-card__value">كوريا الجنوبية</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المدينة</span>
+          <span class="stat-card__value">سيول</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">الشركات</span>
+          <span class="stat-card__value">4 تحليلات عميقة</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المصادر</span>
+          <span class="stat-card__value">رسمية · حكومية · إعلامية</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Executive Summary -->
+  <section class="section" id="summary">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">01</span>
+        <h2 class="section__title">الملخص التنفيذي</h2>
+      </div>
+      <div class="glass-card summary">
+        <p class="summary__lead">
+          سوق الروبوتات المنزلية في سيول يقوده <strong>لاعبان عملاقان</strong> (Samsung وLG)
+          و<strong>شركتان متخصصتان</strong> (Hyodol للرعاية · LUXROBO للتعليم والـ AIoT).
+        </p>
+        <p>
+          <strong>Hyodol</strong> الوحيدة التي تبيع فعلياً بسعر معلن: <strong>1,600,000 وون</strong>
+          (~1,220 دولار) مع برامج حكومية للإيجار/الشراء. <strong>LUXROBO</strong> تبيع kits
+          بين <strong>320,000–640,000 وون</strong>. <strong>Samsung Ballie</strong> و<strong>LG CLOiD</strong>
+          بلا أسعار تجارية معلنة — Ballie مُعلّق تجارياً، وCLOiD في مرحلة تجارب 2027.
+        </p>
+        <div class="summary__verdict">
+          <span class="summary__verdict-label">الحكم الأولي</span>
+          <p>السوق الكوري ناضج تقنياً لكنه غير ناضج تجارياً في الروبوتات المنزلية الشاملة.
+          Hyodol النموذج الأكثر واقعية في النشر؛ LG الأكثر طموحاً تقنياً على المدى الطويل.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market -->
+  <section class="section section--alt" id="market">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">02</span>
+        <h2 class="section__title">نظرة عامة على السوق</h2>
+      </div>
+      <div class="two-col">
+        <div class="glass-card">
+          <p>كوريا الجنوبية تقترب من مجتمع <strong>فائق الشيخوخة</strong> (19.2% فوق 65 عاماً)،
+          ما يدفع روبوتات الرعاية. بالتوازي، Samsung وLG يستثمران في <strong>Zero Labor Home</strong>
+          و<strong>Ambient AI</strong>.</p>
+          <p>ثلاثة نماذج تسعير سائدة: <strong>شراء مباشر</strong> (Hyodol · LUXROBO)،
+          <strong>برامج حكومية بسقف سنوي</strong> (Hyodol 1.6M وون)،
+          <strong>اشتراك محتمل</strong> (LG Q9/CLOiD — لم يُعلن بعد)،
+          <strong>غير متاح تجارياً</strong> (Samsung Ballie).</p>
+        </div>
+        <div class="visual-block"><span>Seoul · Home Robotics</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companies Index -->
+  <section class="section" id="companies">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">03</span>
+        <h2 class="section__title">فهرس الشركات</h2>
+        <p class="section__subtitle">انقر على أي شركة للانتقال إلى تحليلها وتقييمها العميق</p>
+      </div>
+      <div class="founders-grid">
+        <a href="#samsung" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>Samsung</span></div>
+          <h3>Samsung · Ballie</h3>
+          <p class="founder-card__role">رفيق منزلي AI · Gemini</p>
+          <p><strong>السعر:</strong> غير معلن · مُعلّق تجارياً</p>
+          <p><strong>العنوان:</strong> Suwon · سيول</p>
+        </a>
+        <a href="#hyodol" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>Hyodol</span></div>
+          <h3>Hyodol</h3>
+          <p class="founder-card__role">روبوت رعاية مسنّين</p>
+          <p><strong>السعر:</strong> 1,600,000 ₩</p>
+          <p><strong>العنوان:</strong> Anyang · سيول الكبرى</p>
+        </a>
+        <a href="#lg" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>LG · CLOiD</span></div>
+          <h3>LG Electronics</h3>
+          <p class="founder-card__role">CLOiD · Q9 · Zero Labor</p>
+          <p><strong>السعر:</strong> غير معلن · اشتراك محتمل</p>
+          <p><strong>العنوان:</strong> Yeouido · سيول</p>
+        </a>
+        <a href="#luxrobo" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>LUXROBO</span></div>
+          <h3>LUXROBO</h3>
+          <p class="founder-card__role">MODI · AIoT · EdTech</p>
+          <p><strong>السعر:</strong> 320,000–640,000 ₩</p>
+          <p><strong>العنوان:</strong> Gangnam · سيول</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAMSUNG Deep Dive -->
+  <section class="section section--alt" id="samsung">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">شركة 01</span>
+        <h2 class="section__title">Samsung Electronics — Ballie</h2>
+        <p class="section__subtitle">تحليل وتقييم عميق</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">سعر الشراء</span>
+          <span class="pricing-card__price">غير معلن</span>
+          <p>Samsung لم تُعلن سعراً رسمياً لـ Ballie حتى يوليو 2026.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">الاشتراك</span>
+          <span class="pricing-card__price">—</span>
+          <p>لا يوجد نموذج اشتراك معلن — المنتج غير متاح تجارياً.</p>
+        </div>
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">الحالة التجارية</span>
+          <span class="pricing-card__type">الوضع الحالي</span>
+          <span class="pricing-card__price">مُعلّق</span>
+          <p>Bloomberg (يناير 2026): مُعلّق إلى أجل غير مسمى كمنتج استهلاكي.</p>
+        </div>
+      </div>
+
+      <div class="glass-card hq-card" style="margin: 1rem 0;">
+        <div class="hq-card__icon">📍</div>
+        <div>
+          <h3>العناوين الرسمية</h3>
+          <p><strong>المقر الرئيسي:</strong> 129 Samseong-ro, Yeongtong-gu, Suwon, Gyeonggi-do, Korea</p>
+          <p><strong>مكتب سيول:</strong> Samsung Electronics Seoul R&amp;D Campus</p>
+          <p><strong>الموقع:</strong> samsung.com · news.samsung.com</p>
+        </div>
+      </div>
+
+      <div class="glass-card summary" style="margin-bottom: 1rem;">
+        <p class="summary__lead"><strong>نبذة استراتيجية</strong></p>
+        <p>Ballie أُعلن CES 2020، أُعيد تصميمه CES 2024 (أكبر · 3 عجلات · عارض ليزر 1080p)،
+        ووُعد بإطلاق صيف 2025 في أمريكا وكوريا مع Google Gemini. التأخير تكرر حتى أُعيد
+        تأطيره كـ <strong>«منصة ابتكار داخلية»</strong> لا منتجاً استهلاكياً.</p>
+        <p><strong>الإدارة:</strong> Samsung Electronics (شركة مدرجة) · لا مؤسس مستقل للمنتج.</p>
+        <p><strong>التكنولوجيا:</strong> Gemini AI · LiDAR · ToF · كاميرا 4K/2K · عارض ثلاثي ليزر Full HD · 4 ميكروفونات · SmartThings · Tizen.</p>
+        <p><strong>الشركاء:</strong> Google Cloud (Gemini) · منظومة SmartThings.</p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">نقاط القوة</span>
+          <p>علامة عالمية · تكامل SmartThings · شراكة Google · بنية R&amp;D ضخمة · بيانات منزلية عبر أجهزة Samsung.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">نقاط الضعف</span>
+          <p>6 سنوات دون إطلاق · لا سعر · لا مواصفات رسمية كاملة · تعدد المهام دون تركيز · غياب من CES 2026.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">الاستخدامات المخططة</span>
+          <p>التحكم بالمنزل · مراقبة حيوانات · عرض تمارين · مكالمات · جدولة · توصيات شخصية.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">تحليل السعر المتوقع</span>
+          <p>تحليلات السوق تقدّر $999–$1,599+ إن أُطلق — لكن Samsung لم تؤكد أي رقم.</p>
+        </div>
+      </div>
+
+      <div class="assessment-grid" style="margin-top: 1rem;">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>جاهزية تجارية</span><span class="assessment-card__score">15%</span></div>
+          <div class="progress-bar progress-bar--risk"><div class="progress-bar__fill" data-width="15"></div></div>
+          <p>مُعلّق تجارياً — صفحة التسجيل ما زالت موجودة لكن بلا تاريخ إطلاق جديد.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>قوة تقنية</span><span class="assessment-card__score">75%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="75"></div></div>
+          <p>تقنية مثبتة في العروض — لكن الموثوقية طويلة المدى غير مُختبرة تجارياً.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>تأثير على السوق الكوري</span><span class="assessment-card__score">60%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="60"></div></div>
+          <p>حتى كمنصة داخلية، يُعاد توزيع تقنيات Ballie على منتجات Samsung المنزلية.</p>
+        </div>
+      </div>
+
+      <div class="glass-card final-verdict" style="margin-top: 1rem;">
+        <h3>التقييم العام: ⭐⭐⭐ (3/5)</h3>
+        <p>Ballie مشروع استراتيجي مهم لـ Samsung لكنه <strong>فشل حتى الآن كمنتج تجاري</strong>.
+        المراقبة يجب أن تركز على تقنياته المُعاد توزيعها (Ambient AI · Spatial Awareness)
+        وليس على توقع إطلاق قريب.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HYODOL Deep Dive -->
+  <section class="section" id="hyodol">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">شركة 02</span>
+        <h2 class="section__title">Hyodol (㈜ 효돌)</h2>
+        <p class="section__subtitle">تحليل وتقييم عميق</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">السعر الرسمي</span>
+          <span class="pricing-card__type">شراء مباشر</span>
+          <span class="pricing-card__price">1,600,000 ₩</span>
+          <p>~1,220 دولار · مُدرج في k-robot.co.kr (موديل R-R-sCC-HD-OS)</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">برنامج حكومي</span>
+          <span class="pricing-card__price">سقف 1.6M ₩/سنة</span>
+          <p>شراء أو إيجار ضمن التأمين الوطني للرعاية طويلة الأمد (2024).</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">توزيع بلدي</span>
+          <span class="pricing-card__price">~1.6M ₩/وحدة</span>
+          <p>مثال: Guro سيول 2019 — 200M ₩ لعدة وحدات (~1,150$/وحدة).</p>
+        </div>
+      </div>
+
+      <div class="glass-card hq-card" style="margin: 1rem 0;">
+        <div class="hq-card__icon">📍</div>
+        <div>
+          <h3>العناوين والتواصل</h3>
+          <p><strong>المقر:</strong> B-1715&amp;1716, 282 Hagui-ro, Dongan-gu, Anyang-si, Gyeonggi-do 14056</p>
+          <p><strong>الهاتف:</strong> +82-2-6218-8056 · +82-2-562-8055</p>
+          <p><strong>البريد:</strong> info@hyodol.com · <strong>المتجر:</strong> hyodolshop.com</p>
+        </div>
+      </div>
+
+      <div class="glass-card summary" style="margin-bottom: 1rem;">
+        <p class="summary__lead"><strong>نبذة استراتيجية</strong></p>
+        <p>تأسست 2009 كـ Studio Cross Culture · أُعيدت تسميتها Hyodol 2020.
+        CEO: <strong>Kim Jihee</strong>. أكثر من <strong>12,000 وحدة</strong> منشورة في كوريا
+        (2025) · أكثر من <strong>200 بلدية</strong> شريكة · <strong>300M+</strong> سجل حياة (lifelog).</p>
+        <p><strong>المنتج:</strong> Hyodol Ver.2 — روبوت بشكل دمية · محادثة ChatGPT · LTE Cat.4 ·
+        تطبيق أوصياء · نظام مراقبة مؤسسات · دعم كوري وإنجليزي.</p>
+        <p><strong>التكنولوجيا:</strong> ChatGPT dialogue · Microsoft MS Launcher Level 4 ·
+        Lifelog analytics · LTE · Global SIM (Vodafone/Telenor).</p>
+        <p><strong>الشركاء:</strong> Microsoft · وزارة الصحة والرفاه · التأمين الوطني · بلديات كورية · تجارب NYC وNetherlands.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">2009</span>
+            <h4>التأسيس</h4>
+            <p>Studio Cross Culture — معهد أبحاث تصميم المسنّين.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">2019</span>
+            <h4>نشر Guro سيول</h4>
+            <p>200 مليون وون استثمار حكومي + بلدي.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">2024</span>
+            <h4>برنامج التأمين الوطني</h4>
+            <p>اختيار Hyodol في المرحلة الثانية للرعاية المنزلية.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">2026</span>
+            <h4>التوسع الدولي</h4>
+            <p>إطلاق أمريكي مُخطط · اختبارات NL وUS · لغات إضافية.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="assessment-grid" style="margin-top: 1.5rem;">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>نشر فعلي</span><span class="assessment-card__score">92%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="92"></div></div>
+          <p>النموذج الأكثر نضجاً تجارياً بين الشركات الأربع — بيع ونشر حكومي مُثبت.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>وضوح التسعير</span><span class="assessment-card__score">90%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="90"></div></div>
+          <p>سعر معلن · برامج حكومية بسقف واضح · متجر إلكتروني.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>توسع دولي</span><span class="assessment-card__score">55%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="55"></div></div>
+          <p>تجارب دولية جارية — الإطلاق الأمريكي 2026 لم يُختبر بعد على نطاق واسع.</p>
+        </div>
+      </div>
+
+      <div class="glass-card final-verdict" style="margin-top: 1rem;">
+        <h3>التقييم العام: ⭐⭐⭐⭐⭐ (5/5) في قطاعها</h3>
+        <p>Hyodol <strong>المرجع الكوري الأقوى</strong> في روبوتات الرعاية المنزلية — نموذج
+        تسعير واضح، نشر وطني، وبيانات ضخمة. ليست روبوت أعمال منزلية، لكنها الأكثر
+        نجاحاً في «الروبوت داخل المنزل» في كوريا.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LG Deep Dive -->
+  <section class="section section--alt" id="lg">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">شركة 03</span>
+        <h2 class="section__title">LG Electronics — CLOiD &amp; Q9</h2>
+        <p class="section__subtitle">تحليل وتقييم عميق</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">LG CLOiD — شراء</span>
+          <span class="pricing-card__price">غير معلن</span>
+          <p>لا MSRP رسمي · تجارب جدوى 2027 · إطلاق منزلي مستهدف 2028–2030.</p>
+        </div>
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">نموذج محتمل</span>
+          <span class="pricing-card__type">LG Q9 / CLOiD</span>
+          <span class="pricing-card__price">اشتراك</span>
+          <p>LG تدرس نموذج اشتراك + ThinQ — لم يُعلن السعر بعد (CES 2025).</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">ThinQ ON (مرجع)</span>
+          <span class="pricing-card__price">Hub منزلي</span>
+          <p>يُستخدم كمرساة تسعيرية لـ «دماغ المنزل» قبل جسم الروبوت.</p>
+        </div>
+      </div>
+
+      <div class="glass-card hq-card" style="margin: 1rem 0;">
+        <div class="hq-card__icon">📍</div>
+        <div>
+          <h3>العناوين الرسمية</h3>
+          <p><strong>المقر:</strong> LG Twin Towers, 128 Yeoui-daero, Yeongdeungpo-gu, Seoul 07336</p>
+          <p><strong>مصنع بيانات الروبوت:</strong> Yangjae R&amp;D Campus, Seoul (~33,000 م² · 4 طوابق)</p>
+          <p><strong>الإدارة:</strong> Lyu Jae-cheol (CEO) · Seungtae Baek (EVP · HS Division)</p>
+        </div>
+      </div>
+
+      <div class="glass-card summary" style="margin-bottom: 1rem;">
+        <p class="summary__lead"><strong>نبذة استراتيجية</strong></p>
+        <p>LG تأسست 1958. رؤية <strong>Zero Labor Home</strong>: أتمتة كاملة للأعمال المنزلية.
+        <strong>Q9</strong> (2024) — مركز منزلي متحرك ذاتي القيادة. <strong>CLOiD</strong> (CES 2026) —
+        روبوت بشري بذراعين و5 أصابع · عجلات · يطوي مناشف ويحمل أغراضاً ويرتب ثلاجة.</p>
+        <p><strong>خطة النشر:</strong> 100 وحدة CLOiD في المصانع (2026) → مئات خلال العام →
+        تجارب منزلية 2027 → إطلاق تجاري 2028 (LG) / 2030 (محللون).</p>
+        <p><strong>الاستثمار:</strong> مئات المليارات وون حتى 2030 في Yangjae robot data factory.</p>
+        <p><strong>التكنولوجيا:</strong> Physical AI · Vision Language Models · Actuators مخصصة · ThinQ · ThinQ ON · Microsoft partnership.</p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">مهام CLOiD</span>
+          <p>تحميل غسالة · طي ملابس · ترتيب ثلاجة · ترتيب غرف · مساعدة طبخ · جمع أطباق · مهام المائدة.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">نقاط القوة</span>
+          <p>أقرب روبوت كوري لأتمتة شاملة · تكامل أجهزة LG · مصنع بيانات مخصص · جائزة CES 2026.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">نقاط الضعف</span>
+          <p>لا سعر · لا جدول تجاري نهائي · تعقيد هائل · يبدأ بالمصانع لا المنازل.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">نموذج الإيرادات المتوقع</span>
+          <p>اشتراك + تمويل + حزم مع أجهزة LG — لا شراء لمرة واحدة مؤكد.</p>
+        </div>
+      </div>
+
+      <div class="assessment-grid" style="margin-top: 1rem;">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>طموح تقني</span><span class="assessment-card__score">95%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="95"></div></div>
+          <p>الأكثر تقدماً في المهام المنزلية الفعلية بين اللاعبين الكوريين.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>جاهزية تجارية</span><span class="assessment-card__score">25%</span></div>
+          <div class="progress-bar progress-bar--risk"><div class="progress-bar__fill" data-width="25"></div></div>
+          <p>3–4 سنوات على الأقل قبل منزل حقيقي حسب محللين صناعة.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>وضوح التسعير</span><span class="assessment-card__score">10%</span></div>
+          <div class="progress-bar progress-bar--risk"><div class="progress-bar__fill" data-width="10"></div></div>
+          <p>لا سعر · لا اشتراك محدد — فقط إشارات لنموذج خدمة.</p>
+        </div>
+      </div>
+
+      <div class="glass-card final-verdict" style="margin-top: 1rem;">
+        <h3>التقييم العام: ⭐⭐⭐⭐ (4/5) — واعد جداً · مبكر جداً</h3>
+        <p>LG CLOiD <strong>أقوى مشروع كوري تقنياً</strong> في أتمتة المنزل، لكنه بعيد تجارياً.
+        Q9 أقرب للإطلاق كاشتراك. المراقبة الحاسمة: نتائج تجارب 2027 وإعلان التسعير.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUXROBO Deep Dive -->
+  <section class="section" id="luxrobo">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">شركة 04</span>
+        <h2 class="section__title">LUXROBO — MODI</h2>
+        <p class="section__subtitle">تحليل وتقييم عميق</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">MODI Plus Designer Kit</span>
+          <span class="pricing-card__price">320,000 ₩</span>
+          <p>~245 دولار · korea.luxrobo.com</p>
+        </div>
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">الأكثر مبيعاً</span>
+          <span class="pricing-card__type">MODI Plus Master Kit</span>
+          <span class="pricing-card__price">520,000 ₩</span>
+          <p>~400 دولار · شحن مجاني · ضمان 3–6 أشهر</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">MODI Expert Kit</span>
+          <span class="pricing-card__price">640,000 ₩</span>
+          <p>~490 دولار · المستوى المتقدم</p>
+        </div>
+      </div>
+
+      <div class="glass-card hq-card" style="margin: 1rem 0;">
+        <div class="hq-card__icon">📍</div>
+        <div>
+          <h3>العناوين والتواصل</h3>
+          <p><strong>المقر:</strong> 13F, 311 Gangnam-daero, Seocho-gu, Seoul (Dreamplus Gangnam)</p>
+          <p><strong>الهاتف:</strong> 02-1544-8260 · الأحد–خميس 10:00–17:00</p>
+          <p><strong>البريد:</strong> connect@luxrobo.com · hun.oh@luxrobo.com</p>
+          <p><strong>الموقع:</strong> luxrobo.com · korea.luxrobo.com</p>
+        </div>
+      </div>
+
+      <div class="glass-card summary" style="margin-bottom: 1rem;">
+        <p class="summary__lead"><strong>نبذة استراتيجية</strong></p>
+        <p>تأسست نوفمبر 2014 · المؤسسان: <strong>Oh Sanghun</strong> و<strong>Son Seungbae</strong>
+        (ممثلان قانونيان). ~80 موظف. تركيز: <strong>MODI</strong> — منصة Physical Computing
+        تعليمية + توسع AIoT صناعي.</p>
+        <p><strong>المنتجات:</strong> MODI Plus Kits · MODI Studio (برمجة drag-and-drop) · MODI OS ·
+        حلول AIoT · Smart Mobility.</p>
+        <p><strong>التمويل:</strong> FuturePlay · Hanwha · Mirae Asset (المبالغ غير مُفصح عنها علناً).</p>
+        <p><strong>الجوائز:</strong> Red Dot 2017 · iF Design 2018 · CES Innovation Nominee 2019 · Echelon Asia Top 11.</p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">نقاط القوة</span>
+          <p>تسعير شفاف · منصة ناضجة · مقر Gangnam · منهج تعليمي كامل · قابلية توسع MODI OS.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">نقاط الضعف</span>
+          <p>ليس روبوت منزلي جاهز · EdTech لا Consumer · حجم أصغر من العمالقة · لا اشتراك منزلي.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">الاستخدامات</span>
+          <p>تعليم STEM · بناء روبوتات · نماذج AIoT · مختبرات مدارس · نماذج أولية صناعية.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">نموذج الإيرادات</span>
+          <p>بيع مباشر للـ Kits · عقود تعليمية B2B · لا اشتراك منزلي معلن.</p>
+        </div>
+      </div>
+
+      <div class="assessment-grid" style="margin-top: 1rem;">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>وضوح التسعير</span><span class="assessment-card__score">95%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="95"></div></div>
+          <p>أسعار معلنة على المتجر الرسمي — الأوضح بين الشركات الأربع.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>نضج المنتج</span><span class="assessment-card__score">85%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="85"></div></div>
+          <p>10+ سنوات · مناهج · متجر · دعم فني · A/S.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>روبوت منزلي مباشر</span><span class="assessment-card__score">20%</span></div>
+          <div class="progress-bar progress-bar--risk"><div class="progress-bar__fill" data-width="20"></div></div>
+          <p>منصة تعليم/AIoT — لا منتج منزلي للمستهلك.</p>
+        </div>
+      </div>
+
+      <div class="glass-card final-verdict" style="margin-top: 1rem;">
+        <h3>التقييم العام: ⭐⭐⭐⭐ (4/5) في EdTech/AIoT</h3>
+        <p>LUXROBO <strong>ليست منافساً منزلياً</strong> لكنها مورّد تقنيات وتعليم روبوتات
+        بأسعار واضحة. مرجع مهم لفهم خط الإنتاج الكوري للمواهب والـ AIoT.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="section section--alt" id="comparison">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">05</span>
+        <h2 class="section__title">جدول المقارنة الشامل</h2>
+      </div>
+      <div class="table-wrap glass-card">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>الشركة</th>
+              <th>المنتج</th>
+              <th>السعر</th>
+              <th>الاشتراك</th>
+              <th>العنوان</th>
+              <th>المرحلة</th>
+              <th>التقييم</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Samsung</strong></td>
+              <td>Ballie</td>
+              <td>غير معلن</td>
+              <td>—</td>
+              <td>Suwon · Gyeonggi</td>
+              <td>مُعلّق تجارياً</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td><strong>Hyodol</strong></td>
+              <td>Hyodol Ver.2</td>
+              <td>1,600,000 ₩</td>
+              <td>إيجار حكومي (سقف 1.6M ₩/سنة)</td>
+              <td>Anyang · Gyeonggi 14056</td>
+              <td>نشر وطني · 12K+ وحدة</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr class="compare-table__highlight">
+              <td><strong>LG</strong></td>
+              <td>CLOiD / Q9</td>
+              <td>غير معلن</td>
+              <td>محتمل (ThinQ)</td>
+              <td>Yeouido · Seoul 07336</td>
+              <td>تجارب 2027 · إطلاق 2028+</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td><strong>LUXROBO</strong></td>
+              <td>MODI Kits</td>
+              <td>320K–640K ₩</td>
+              <td>— (بيع مباشر)</td>
+              <td>Gangnam · Seoul</td>
+              <td>ناضج تجارياً</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market Assessment -->
+  <section class="section" id="assessment">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">06</span>
+        <h2 class="section__title">تقييم السوق الكوري</h2>
+      </div>
+      <div class="assessment-grid">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>نضج تقني</span><span class="assessment-card__score">88%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="88"></div></div>
+          <p>من Physical AI إلى روبوتات رعاية منشورة فعلياً.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>شفافية التسعير</span><span class="assessment-card__score">45%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="45"></div></div>
+          <p>Hyodol وLUXROBO واضحان — Samsung وLG بلا أسعار.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>دعم حكومي</span><span class="assessment-card__score">85%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="85"></div></div>
+          <p>برامج بلدية ووطنية للرعاية والروبوتات.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header"><span>جاهزية شراء المستهلك</span><span class="assessment-card__score">40%</span></div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="40"></div></div>
+          <p>شراء مباشر متاح لـ Hyodol وLUXROBO فقط.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opportunities -->
+  <section class="section section--alt" id="opportunities">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">07</span>
+        <h2 class="section__title">الفرص التجارية والشراكات</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">01</span>
+          <h3>نموذج Hyodol الحكومي</h3>
+          <p>شراكات مع بلديات سيول عبر برامج بسقف 1.6M وون سنوياً — نموذج تسعير مُختبر.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">02</span>
+          <h3>تكامل ThinQ / SmartThings</h3>
+          <p>أي منتج منزلي في كوريا يحتاج توافقاً مع منصتي LG وSamsung.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">03</span>
+          <h3>مراقبة LG CLOiD 2027</h3>
+          <p>إعلان التسعير والاشتراك سيعيد تشكيل السوق الكوري بالكامل.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">04</span>
+          <h3>شراكات AIoT مع LUXROBO</h3>
+          <p>منصة MODI كقناة تعليم ونماذج أولية في السوق الكوري.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="section" id="conclusion">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">08</span>
+        <h2 class="section__title">الخلاصة النهائية</h2>
+      </div>
+      <div class="glass-card final-verdict">
+        <h3>الحكم الاستخباراتي</h3>
+        <p>سوق سيول للروبوتات المنزلية <strong>مُجزّأ</strong>: Hyodol تبيع فعلياً بـ 1.6M وون،
+        LUXROBO بـ 320K–640K وون، Samsung Ballie مُعلّق بلا سعر، وLG CLOiD واعد بلا جدول تجاري.</p>
+        <p style="margin-top: 1rem;"><strong>التوصيات:</strong> متابعة إعلان أسعار LG (2027) ·
+        دراسة نموذج Hyodol الحكومي · عدم بناء استراتيجية على إطلاق Ballie ·
+        استخدام LUXROBO كمؤشر على النظام التعليمي/التقني الكوري.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sources -->
+  <section class="section section--alt" id="sources">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">09</span>
+        <h2 class="section__title">المصادر</h2>
+      </div>
+      <div class="sources-grid">
+        <div class="glass-card source-card"><span class="source-card__icon">📱</span><h4>Samsung Newsroom</h4><p>Ballie · CES 2024/2025</p></div>
+        <div class="glass-card source-card"><span class="source-card__icon">📰</span><h4>Bloomberg</h4><p>Ballie Shelved Jan 2026</p></div>
+        <div class="glass-card source-card"><span class="source-card__icon">🏠</span><h4>LG Newsroom</h4><p>CLOiD · Zero Labor Home</p></div>
+        <div class="glass-card source-card"><span class="source-card__icon">📰</span><h4>Korea Times</h4><p>CLOiD Testing 2027</p></div>
+        <div class="glass-card source-card"><span class="source-card__icon">💚</span><h4>Hyodol · k-robot</h4><p>1,600,000 ₩ · Specs</p></div>
+        <div class="glass-card source-card"><span class="source-card__icon">🏛</span><h4>Aju Press</h4><p>Insurance Program 2024</p></div>
+        <div class="glass-card source-card"><span class="source-card__icon">🔧</span><h4>LUXROBO Store</h4><p>korea.luxrobo.com</p></div>
+        <div class="glass-card source-card"><span class="source-card__icon">📰</span><h4>Rest of World</h4><p>Hyodol Deployment</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__brand-dot"></span>
+        <span>تقرير استخباراتي — سيول · كوريا الجنوبية</span>
+      </div>
+      <p class="footer__copy">© 2026 · تقرير داخلي · جميع البيانات من مصادر عامة</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
