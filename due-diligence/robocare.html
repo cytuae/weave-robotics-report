@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="عناية واجبة قبل الزيارة — RoboCare Co., Ltd.">
+  <title>عناية واجبة — RoboCare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .dd-badge { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.45rem 0.9rem; border-radius: 999px; background: var(--accent-subtle); color: var(--accent); font-weight: 700; font-size: 0.85rem; margin-bottom: 1rem; }
+    .dd-meta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+    .dd-flag { display: inline-flex; padding: 0.35rem 0.75rem; border-radius: 999px; font-size: 0.82rem; font-weight: 700; background: rgba(45, 74, 62, 0.1); color: var(--accent); }
+    .dd-flag--ok { background: rgba(61, 107, 88, 0.12); color: #2d4a3e; }
+    .dd-flag--warn { background: rgba(154, 139, 111, 0.16); color: #7a6a4d; }
+    .dd-flag--risk { background: rgba(160, 96, 96, 0.14); color: #8b3f3f; }
+    .dd-questions li { position: relative; padding-inline-start: 1.1rem; margin-bottom: 0.65rem; }
+    .dd-questions li::before { content: ""; position: absolute; inset-inline-start: 0; top: 0.78rem; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  </style>
+</head>
+<body class="has-report-bar">
+    <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../south-korea-home-robotics.html" class="nav__brand">
+        <span class="nav__brand-dot"></span>
+        <span>سيول · كوريا</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="../index.html" class="nav__link">Weave Robotics</a></li>
+        <li><a href="../south-korea-home-robotics.html" class="nav__link">فهرس سيول</a></li>
+        <li class="nav__item--dropdown">
+          <button type="button" class="nav__link nav__dropdown-btn" aria-expanded="false">تقارير الشركات</button>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-label">Due Diligence · قبل الزيارة</li>
+            <li><a href="rlwrld.html">01 · RLWRLD</a></li>
+            <li><a href="hyundai-robotics-lab.html">02 · Hyundai LAB</a></li>
+            <li><a href="neubility.html">03 · Neubility</a></li>
+            <li><a href="robotis.html">04 · ROBOTIS</a></li>
+            <li><a href="robocare.html" class="active">05 · RoboCare</a></li>
+            <li><a href="hyodol.html">06 · Hyodol</a></li>
+          </ul>
+        </li>
+        <li><a href="#identity" class="nav__link">الهوية</a></li>
+        <li><a href="#funding" class="nav__link">التمويل</a></li>
+        <li><a href="#products" class="nav__link">المنتجات</a></li>
+        <li><a href="#visit" class="nav__link active">الزيارة</a></li>
+      </ul>
+      <a href="../south-korea-home-robotics.html#due-diligence" class="nav__cta">كل التقارير</a>
+    </nav>
+  </header>
+
+  <div class="report-bar">
+    <div class="container report-bar__inner">
+      <a href="../south-korea-home-robotics.html" class="report-bar__home">← سيول · كوريا</a>
+      <div class="report-bar__links">
+        <a href="rlwrld.html">01 · RLWRLD</a>
+        <a href="hyundai-robotics-lab.html">02 · Hyundai LAB</a>
+        <a href="neubility.html">03 · Neubility</a>
+        <a href="robotis.html">04 · ROBOTIS</a>
+        <a href="robocare.html" class="active">05 · RoboCare</a>
+        <a href="hyodol.html">06 · Hyodol</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__badge">Due Diligence قبل الزيارة · RoboCare</div>
+      <span class="dd-badge">رعاية ومرافقة للمسنين · سيول الكبرى</span>
+      <h1 class="hero__title">RoboCare<br><span>روبوتات رعاية أقرب للمنزل من الـHumanoid الصناعي</span></h1>
+      <p class="hero__desc">
+        RoboCare شركة متخصصة في روبوتات المرافقة والرعاية المعرفية للمسنين. موقعها التجاري أقرب لبيئة
+        المنزل والرعاية المؤسسية من الروبوتات الصناعية، مع مقر حديث منشور في Seongnam ضمن سيول الكبرى.
+      </p>
+      <div class="hero__stats">
+        <div class="stat-card glass">
+          <span class="stat-card__label">تأسست</span>
+          <span class="stat-card__value">أكتوبر 2012</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المقر</span>
+          <span class="stat-card__value">Seongnam</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المنتجات</span>
+          <span class="stat-card__value">SILBOT · BOMI</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">التمويل</span>
+          <span class="stat-card__value">VC غير واضح علناً</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="identity">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">01</span>
+        <h2 class="section__title">هوية الشركة</h2>
+        <p class="section__subtitle">بيانات تشغيلية من مصادر كورية وملفات شركاء، مع تنبيه للعناوين القديمة.</p>
+      </div>
+      <div class="two-col">
+        <div class="glass-card">
+          <h3>البيانات المنشورة</h3>
+          <p><strong>الاسم:</strong> Robocare Co., Ltd. / 로보케어</p>
+          <p><strong>الرئيس التنفيذي:</strong> Jeon Il Moon (문전일) — مذكور في مصادر Orbbec وKAR.</p>
+          <p><strong>تاريخ التأسيس:</strong> 2012.10.22</p>
+          <p><strong>العنوان الحديث:</strong> 901~904, 42 Changeop-ro, Sujeong-gu, Seongnam-si, Gyeonggi</p>
+          <p><strong>الهاتف:</strong> 031-751-5200 / 0504-3105-7199، وهما قناتان منشورتان في مصادر مختلفة.</p>
+          <p><strong>الموقع:</strong> robocare.co.kr</p>
+          <div class="dd-meta">
+            <span class="dd-flag dd-flag--ok">منتجات منشورة</span>
+            <span class="dd-flag dd-flag--warn">تحقق عنوان قبل الزيارة</span>
+          </div>
+        </div>
+        <div class="glass-card">
+          <h3>ملاحظات مهمة</h3>
+          <p><strong>الأصل المؤسسي:</strong> توصف الشركة في موادها بأنها أول venture financed by KIST.</p>
+          <p><strong>العناوين القديمة:</strong> ظهرت عناوين أقدم في Gangnam ضمن tradeKorea وقد تكون غير محدثة؛ اعتمد Seongnam من KAR كعنوان حديث مع تأكيد هاتفي قبل الموعد.</p>
+          <p><strong>الموقع في السوق:</strong> رعاية معرفية، مرافقة، ومتابعة داخلية للمسنين، وليس روبوت مهام منزلية ثقيلة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="funding">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">02</span>
+        <h2 class="section__title">التمويل ونموذج الأعمال</h2>
+      </div>
+      <div class="funding-grid">
+        <div class="glass-card funding-stat">
+          <span class="funding-stat__label">جولات التمويل</span>
+          <span class="funding-stat__value">غير معلنة بوضوح</span>
+          <p>لا توجد جولات كبيرة موثّقة علناً مثل RLWRLD أو Neubility.</p>
+        </div>
+        <div class="glass-card funding-stat">
+          <span class="funding-stat__label">إجمالي التمويل</span>
+          <span class="funding-stat__value">غير مثبت</span>
+          <p>لا تخترع أرقام funding؛ يجب طلب ملف شركة رسمي أو cap table مختصر عند الاهتمام.</p>
+        </div>
+        <div class="glass-card funding-stat">
+          <span class="funding-stat__label">نموذج الإيراد</span>
+          <span class="funding-stat__value">مؤسسات وبلديات</span>
+          <p>النشر يبدو معتمداً على مراكز رعاية، مؤسسات، وبلديات أكثر من بيع استهلاكي مباشر واسع.</p>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <span class="timeline__dot"></span>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">2012</span>
+            <h4>تأسيس RoboCare</h4>
+            <p>شركة موجهة إلى الرعاية المعرفية والروبوتات الاجتماعية، مع خلفية مرتبطة بمنظومة KIST.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__dot"></span>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">النشر المحلي</span>
+            <h4>بلديات ومراكز رعاية</h4>
+            <p>حالات منشورة في Gwangmyeong وSeongnam وDaegu، ما يشير إلى جاهزية ميدانية لا مجرد نموذج أولي.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__dot"></span>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">قبل الزيارة</span>
+            <h4>تثبيت نموذج العقود</h4>
+            <p>ينبغي طلب أمثلة عقود مؤسسات، مدة الدعم، نموذج الصيانة، ومتطلبات التكامل مع مقدمي الرعاية.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">03</span>
+        <h2 class="section__title">المنتجات وحالات الاستخدام</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">SILBOT</span>
+          <p>روبوت مرافقة ورعاية معرفية، مناسب للبرامج الجماعية أو المؤسسية لكبار السن.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">BOMI1 / BOMI2</span>
+          <p>روبوت رعاية متنقل داخلي يقدم إشعارات، محادثة، قياساً صحياً، محتوى معرفياً، وكشف طوارئ.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">DORI</span>
+          <p>ضمن خط الشركة للروبوتات الاجتماعية/الرعائية، ويحتاج توضيحاً عملياً في الديمو حول السوق المستهدف.</p>
+        </div>
+      </div>
+      <div class="glass-card summary" style="margin-top: 1rem;">
+        <p class="summary__lead">الجاهزية: منتجات منشورة ومستخدمة في مؤسسات رعاية — أقرب للتجاري من الـprototype.</p>
+        <p><strong>الشراكة التقنية:</strong> Orbbec cameras partnership منشورة في دراسة حالة، ما يستدعي سؤالاً عن الاعتماد على كاميرات وعمق الرؤية وسياسة الخصوصية.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">04</span>
+        <h2 class="section__title">التسعير والتعاقد</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">قاعدة صارمة</span>
+          <span class="pricing-card__type">أسعار عامة</span>
+          <span class="pricing-card__price">غير معلنة</span>
+          <p>السعر غير معلن — يحتاج عرض سعر رسمي. لا توجد أسعار عامة واضحة للشراء أو الاشتراك.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">قنوات البيع</span>
+          <span class="pricing-card__price">B2B / بلديات</span>
+          <p>الشراء يبدو غالباً عبر مؤسسات رعاية أو برامج بلدية، لا عبر متجر استهلاكي مباشر.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">ما يجب طلبه</span>
+          <span class="pricing-card__price">عرض رسمي</span>
+          <p>اطلب سعر الوحدة، رسوم البرمجيات، الصيانة، التدريب، قطع الغيار، وخدمة التخصيص اللغوي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="visit">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">05</span>
+        <h2 class="section__title">تقييم الزيارة والأسئلة</h2>
+      </div>
+      <div class="assessment-grid">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>ملاءمة الرعاية المنزلية</span>
+            <span class="assessment-card__score">عالية</span>
+          </div>
+          <p>مناسبة جداً إذا كان الهدف رعاية المسنين، المرافقة، وتنبيهات السلامة داخل المنزل أو مراكز الرعاية.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>وضوح الاستثمار</span>
+            <span class="assessment-card__score">منخفض</span>
+          </div>
+          <p>غياب جولات تمويل عامة وأرقام مالية واضحة يجعل التحقق التجاري ضرورياً قبل أي وكالة أو استثمار.</p>
+        </div>
+      </div>
+      <div class="swot-grid" style="margin-top: 1rem;">
+        <div class="glass-card swot-card swot-card--s">
+          <h3>قوة</h3>
+          <ul><li>منتجات منشورة في مؤسسات رعاية.</li><li>تركيز واضح على المسنين والرعاية المعرفية.</li><li>حالات استخدام أقرب للمنزل من الروبوت الصناعي.</li></ul>
+        </div>
+        <div class="glass-card swot-card swot-card--w">
+          <h3>ضعف</h3>
+          <ul><li>أسعار غير معلنة بوضوح.</li><li>تمويل VC غير واضح علناً.</li><li>الاعتماد على مبيعات مؤسسية قد يبطئ التوسع.</li></ul>
+        </div>
+        <div class="glass-card swot-card swot-card--o">
+          <h3>فرصة</h3>
+          <ul><li>تجارب مع مراكز رعاية خليجية.</li><li>تعريب المحادثة والمحتوى المعرفي.</li><li>شراكة مع جهات صحية أو بلدية.</li></ul>
+        </div>
+        <div class="glass-card swot-card swot-card--t">
+          <h3>مخاطر</h3>
+          <ul><li>خصوصية البيانات الصحية والحساسة.</li><li>احتياج دعم محلي مستمر.</li><li>عدم وضوح التكلفة الكلية للملكية.</li></ul>
+        </div>
+      </div>
+      <div class="glass-card" style="margin-top: 1rem;">
+        <h3>أسئلة الزيارة</h3>
+        <ul class="dd-questions">
+          <li>ما سعر BOMI وSILBOT الرسمي حسب وحدة واحدة، 10 وحدات، و100 وحدة؟</li>
+          <li>هل توجد وكالة إقليمية أو نموذج شراكة لموزع خليجي؟</li>
+          <li>ما مستوى دعم العربية: واجهة، صوت، محتوى معرفي، ولهجات؟</li>
+          <li>أين تخزن بيانات المحادثة والقياسات الصحية؟ وهل يمكن استضافتها محلياً؟</li>
+          <li>ما متطلبات الصيانة، عمر البطارية، دورة الاستبدال، وتدريب العاملين الاجتماعيين؟</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="sources">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">06</span>
+        <h2 class="section__title">المصادر التي يجب تثبيتها</h2>
+      </div>
+      <div class="sources-grid">
+        <div class="glass-card sources-card"><h3>k-robot.co.kr</h3><p>ملفات شركات الروبوت الكورية وبيانات الاتصال الحديثة.</p></div>
+        <div class="glass-card sources-card"><h3>Orbbec Case Study</h3><p>الشراكة التقنية واستخدام الكاميرات في حلول الرعاية.</p></div>
+        <div class="glass-card sources-card"><h3>KISReport Profile</h3><p>ملف تعريفي للشركة دون الاعتماد على أرقام مالية مخفية أو غير متاحة.</p></div>
+        <div class="glass-card sources-card"><h3>robocare.co.kr</h3><p>مواد الشركة والمنتجات وقنوات التواصل الرسمية.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">Due Diligence · RoboCare</div>
+      <p class="footer__copy">إعداد قبل الزيارة — السعر والتمويل يحتاجان تحققاً مباشراً من الشركة.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

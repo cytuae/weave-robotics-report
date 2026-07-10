@@ -3,15 +3,48 @@ const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav__link');
 
-navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('open');
-  navToggle.classList.toggle('active');
-});
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+    navToggle.classList.toggle('active');
+  });
+}
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    navMenu.classList.remove('open');
-    navToggle.classList.remove('active');
+    if (link.classList.contains('nav__dropdown-btn')) return;
+    if (navMenu) navMenu.classList.remove('open');
+    if (navToggle) navToggle.classList.remove('active');
+  });
+});
+
+// ===== Reports dropdown =====
+document.querySelectorAll('.nav__item--dropdown').forEach(item => {
+  const btn = item.querySelector('.nav__dropdown-btn');
+  if (!btn) return;
+
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    e.stopPropagation();
+    const willOpen = !item.classList.contains('open');
+    document.querySelectorAll('.nav__item--dropdown').forEach(other => {
+      other.classList.remove('open');
+      const otherBtn = other.querySelector('.nav__dropdown-btn');
+      if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+    });
+    if (willOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+document.addEventListener('click', e => {
+  if (e.target.closest('.nav__item--dropdown')) return;
+  document.querySelectorAll('.nav__item--dropdown').forEach(item => {
+    item.classList.remove('open');
+    const btn = item.querySelector('.nav__dropdown-btn');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
   });
 });
 
@@ -19,7 +52,7 @@ navLinks.forEach(link => {
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 20);
+  if (header) header.classList.toggle('scrolled', window.scrollY > 20);
 });
 
 // ===== Active Nav Link =====
@@ -35,7 +68,9 @@ function updateActiveLink() {
 
     if (scrollY >= top && scrollY < top + height) {
       navLinks.forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) return;
+        link.classList.toggle('active', href === `#${id}`);
       });
     }
   });
@@ -85,10 +120,11 @@ progressBars.forEach(bar => progressObserver.observe(bar));
 // ===== Smooth Scroll =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', e => {
+    const href = anchor.getAttribute('href');
+    if (!href || href === '#') return;
+    const target = document.querySelector(href);
+    if (!target) return;
     e.preventDefault();
-    const target = document.querySelector(anchor.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });

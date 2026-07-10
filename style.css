@@ -142,6 +142,71 @@ ul { list-style: none; }
   color: var(--text);
 }
 
+.nav__item--dropdown {
+  position: relative;
+}
+
+.nav__dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  padding: 0;
+}
+
+.nav__dropdown-btn::after {
+  content: '▾';
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.nav__dropdown {
+  position: absolute;
+  top: calc(100% + 0.85rem);
+  inset-inline-end: 0;
+  min-width: 240px;
+  padding: 0.6rem;
+  background: rgba(245, 244, 241, 0.98);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  display: none;
+  z-index: 1100;
+}
+
+.nav__item--dropdown.open .nav__dropdown,
+.nav__item--dropdown:hover .nav__dropdown {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.nav__dropdown a {
+  display: block;
+  padding: 0.7rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.nav__dropdown a:hover,
+.nav__dropdown a.active {
+  background: var(--accent-subtle);
+  color: var(--accent);
+}
+
+.nav__dropdown-label {
+  padding: 0.45rem 0.85rem 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+}
+
 .nav__cta {
   flex-shrink: 0;
   padding: 0.6rem 1.4rem;
@@ -1224,6 +1289,34 @@ ul { list-style: none; }
   .nav__toggle { display: flex; }
   .nav__cta { display: none; }
 
+  .nav__item--dropdown { width: 100%; }
+  .nav__dropdown-btn {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+  .nav__dropdown {
+    position: static;
+    display: none;
+    min-width: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0.25rem 0 0.5rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  .nav__item--dropdown.open .nav__dropdown { display: grid; gap: 0.1rem; }
+  .nav__item--dropdown:hover .nav__dropdown { display: none; }
+  .nav__item--dropdown.open:hover .nav__dropdown { display: grid; }
+  .nav__dropdown a {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.95rem;
+  }
+
   .nav__toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
@@ -1626,6 +1719,189 @@ ul { list-style: none; }
   .investor-card { font-size: 0.95rem; }
 
   .compare-table { min-width: 520px; font-size: 0.9rem; }
+}
+
+/* ===== Due Diligence helpers ===== */
+.dd-badge {
+  letter-spacing: 0.06em;
+}
+
+.dd-flag {
+  display: inline-block;
+  margin: 1rem auto 1.5rem;
+  max-width: 720px;
+  padding: 0.75rem 1.1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.dd-flag--ok {
+  background: rgba(61, 107, 88, 0.1);
+  color: #2d4a3e;
+  border: 1px solid rgba(61, 107, 88, 0.2);
+}
+
+.dd-flag--warn {
+  background: rgba(154, 139, 111, 0.14);
+  color: #6b5a3a;
+  border: 1px solid rgba(154, 139, 111, 0.28);
+}
+
+.dd-flag--risk {
+  background: rgba(160, 96, 96, 0.12);
+  color: #7a3d3d;
+  border: 1px solid rgba(160, 96, 96, 0.25);
+}
+
+.dd-meta {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.dd-meta p,
+.dd-meta li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.dd-questions {
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.dd-questions li {
+  position: relative;
+  padding: 0.9rem 1rem;
+  padding-inline-start: 2.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.dd-questions li::before {
+  content: '؟';
+  position: absolute;
+  inset-inline-start: 0.85rem;
+  top: 0.9rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.dd-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* ===== Report switcher bar ===== */
+.report-bar {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 900;
+  background: rgba(245, 244, 241, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.report-bar__inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.report-bar__home {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  padding: 0.4rem 0.75rem;
+  border-radius: 100px;
+  background: var(--accent-subtle);
+  white-space: nowrap;
+}
+
+.report-bar__links {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.report-bar__links a {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0.4rem 0.7rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.report-bar__links a:hover {
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.report-bar__links a.active {
+  color: #fff;
+  background: var(--accent);
+}
+
+body.has-report-bar {
+  --header-h: 72px;
+  scroll-padding-top: calc(72px + 52px);
+}
+
+body.has-report-bar .hero {
+  padding-top: calc(var(--header-h) + 3.5rem);
+}
+
+@media (max-width: 768px) {
+  .dd-grid-3 { grid-template-columns: 1fr; }
+  .dd-flag { font-size: 0.88rem; }
+  .dd-questions li { font-size: 0.95rem; }
+
+  .nav__item--dropdown { width: 100%; }
+  .nav__dropdown {
+    position: static;
+    display: none;
+    min-width: 0;
+    width: 100%;
+    margin-top: 0.5rem;
+    box-shadow: none;
+  }
+  .nav__item--dropdown.open .nav__dropdown {
+    display: grid;
+  }
+  .nav__item--dropdown:hover .nav__dropdown {
+    display: none;
+  }
+  .nav__item--dropdown.open:hover .nav__dropdown {
+    display: grid;
+  }
+
+  body.has-report-bar .hero {
+    padding-top: calc(var(--header-h) + 3rem);
+  }
 }
 
 @media (max-width: 360px) {

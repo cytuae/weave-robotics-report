@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="تقرير Due Diligence قبل الزيارة — Hyundai Motor Group Robotics LAB">
+  <title>Due Diligence — Hyundai Motor Group Robotics LAB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .dd-badge { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .9rem; border-radius: 999px; background: var(--accent-subtle); color: var(--accent); font-size: .85rem; font-weight: 700; margin: 0 .25rem .5rem 0; }
+    .dd-flag { display: inline-flex; align-items: center; padding: .35rem .75rem; border-radius: 999px; border: 1px solid var(--border-strong); color: var(--text-secondary); font-size: .82rem; font-weight: 700; margin: .2rem; }
+    .dd-flag--ok { background: rgba(45, 74, 62, .09); color: var(--accent); border-color: rgba(45, 74, 62, .18); }
+    .dd-flag--warn { background: rgba(154, 139, 111, .13); color: #746346; border-color: rgba(154, 139, 111, .24); }
+    .dd-flag--risk { background: rgba(141, 52, 52, .09); color: #8d3434; border-color: rgba(141, 52, 52, .18); }
+    .dd-meta { display: grid; gap: .75rem; margin-top: 1rem; color: var(--text-secondary); }
+    .dd-meta p { margin: 0; }
+    .dd-questions { padding-inline-start: 1.1rem; list-style: decimal; color: var(--text-secondary); }
+    .dd-questions li { margin-bottom: .65rem; }
+    .dd-list { padding-inline-start: 1rem; list-style: disc; color: var(--text-secondary); }
+    .dd-list li { margin-bottom: .45rem; }
+  </style>
+</head>
+<body class="has-report-bar">
+
+    <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../south-korea-home-robotics.html" class="nav__brand">
+        <span class="nav__brand-dot"></span>
+        <span>سيول · كوريا</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="../index.html" class="nav__link">Weave Robotics</a></li>
+        <li><a href="../south-korea-home-robotics.html" class="nav__link">فهرس سيول</a></li>
+        <li class="nav__item--dropdown">
+          <button type="button" class="nav__link nav__dropdown-btn" aria-expanded="false">تقارير الشركات</button>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-label">Due Diligence · قبل الزيارة</li>
+            <li><a href="rlwrld.html">01 · RLWRLD</a></li>
+            <li><a href="hyundai-robotics-lab.html" class="active">02 · Hyundai LAB</a></li>
+            <li><a href="neubility.html">03 · Neubility</a></li>
+            <li><a href="robotis.html">04 · ROBOTIS</a></li>
+            <li><a href="robocare.html">05 · RoboCare</a></li>
+            <li><a href="hyodol.html">06 · Hyodol</a></li>
+          </ul>
+        </li>
+        <li><a href="#identity" class="nav__link">الهوية</a></li>
+        <li><a href="#funding" class="nav__link">التمويل</a></li>
+        <li><a href="#products" class="nav__link">المنتجات</a></li>
+        <li><a href="#visit" class="nav__link active">الزيارة</a></li>
+      </ul>
+      <a href="../south-korea-home-robotics.html#due-diligence" class="nav__cta">كل التقارير</a>
+    </nav>
+  </header>
+
+  <div class="report-bar">
+    <div class="container report-bar__inner">
+      <a href="../south-korea-home-robotics.html" class="report-bar__home">← سيول · كوريا</a>
+      <div class="report-bar__links">
+        <a href="rlwrld.html">01 · RLWRLD</a>
+        <a href="hyundai-robotics-lab.html" class="active">02 · Hyundai LAB</a>
+        <a href="neubility.html">03 · Neubility</a>
+        <a href="robotis.html">04 · ROBOTIS</a>
+        <a href="robocare.html">05 · RoboCare</a>
+        <a href="hyodol.html">06 · Hyodol</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__badge">Due Diligence · قبل الزيارة · يوليو 2026</div>
+      <h1 class="hero__title">Hyundai Motor Group<br><span>Robotics LAB</span></h1>
+      <p class="hero__desc">
+        ليست شركة مستقلة متخصصة فقط في المنزل — مختبر داخل Hyundai Motor Group. الزيارة مفيدة لفهم
+        منظومة الروبوتات الخدمية والمباني الذكية، لكنها لا تعني وجود مورّد روبوت منزلي جاهز للمستهلك.
+      </p>
+      <div>
+        <span class="dd-badge">مختبر مجموعة لا startup</span>
+        <span class="dd-flag dd-flag--ok">قوة مالية عالية جداً</span>
+        <span class="dd-flag dd-flag--warn">القرار مركزي داخل HMG</span>
+        <span class="dd-flag dd-flag--risk">لا أسعار استهلاكية معلنة</span>
+      </div>
+      <div class="hero__stats">
+        <div class="stat-card glass">
+          <span class="stat-card__label">الكيان</span>
+          <span class="stat-card__value">جزء من HMG</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المواقع المرتبطة</span>
+          <span class="stat-card__value">سيول / أويوانغ</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المنصات</span>
+          <span class="stat-card__value">DAL-e · MobED · Atlas(BD)</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">التمويل</span>
+          <span class="stat-card__value">تمويل المجموعة</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="identity">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">01</span>
+        <h2 class="section__title">هوية الكيان ونطاقه</h2>
+        <p class="section__subtitle">الهدف قبل الزيارة: ضبط التوقعات حول الكيان، صلاحياته، وما يمكن طلبه منه تجارياً.</p>
+      </div>
+      <div class="two-col">
+        <div class="glass-card summary">
+          <p class="summary__lead"><strong>Hyundai Motor Group Robotics LAB / 현대자동차그룹 로보틱스랩</strong></p>
+          <p>
+            الكيان ليس شركة مستقلة مدرجة أو startup بملكية منفصلة؛ هو وحدة بحث وتطوير داخل Hyundai Motor
+            Company / Kia ومنظومة Hyundai Motor Group. هذا يعني أن التفاوض التجاري، الترخيص، والشراكات
+            العابرة للحدود غالباً تمر عبر قنوات المجموعة، لا عبر فريق مختبر مستقل بالكامل.
+          </p>
+          <div class="dd-meta">
+            <p><strong>القيادة:</strong> Dong Jin Hyun، Vice President وHead of Robotics LAB، مذكور في بيانات HMG الرسمية حول Factorial Seongsu.</p>
+            <p><strong>الصفة القانونية:</strong> ليست كياناً مستقلاً معلناً؛ لا توجد بيانات رأس مال أو تقييم منفصلة للمختبر.</p>
+            <p><strong>نبرة الزيارة:</strong> مقابلة استراتيجية لفهم الحلول، لا اجتماع شراء جهاز منزلي جاهز.</p>
+          </div>
+        </div>
+        <div class="glass-card hq-card">
+          <div class="hq-card__icon">HQ</div>
+          <div>
+            <h3>العناوين والزيارة</h3>
+            <p>
+              تظهر عناوين منشورة في مصادر عامة وثانوية مرتبطة بـ Hyundai Motor Company HQ في Seocho
+              مثل 12 Heolleung-ro، كما تربط بعض الأدلة الصناعية Robotics LAB بمنطقة Uiwang عند
+              37 Cheoldobangmulgwan-ro.
+            </p>
+            <p>
+              هذه العناوين يجب التعامل معها كمؤشرات أولية فقط. يلزم تأكيد موعد الزيارة والموقع الدقيق
+              عبر القنوات الرسمية لـ HMG أو Boston Dynamics قبل أي ترتيبات سفر.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="glass-card" style="margin-top: 1rem;">
+        <span class="dd-flag dd-flag--warn">زيارة المختبر ليست عامة</span>
+        <span class="dd-flag dd-flag--ok">UX Studio Seoul قابل للحجز</span>
+        <span class="dd-flag dd-flag--risk">Advanced Research Lab غير متاح للزوار</span>
+        <p style="margin-top: 1rem;">
+          لا توجد جولة عامة مفتوحة للمختبر. UX Studio Seoul يمكن حجزه كمساحة تجربة، لكن Advanced
+          Research Lab ليس متاحاً للزوار. الزيارة التجارية الجادة تحتاج تنسيقاً رسمياً مسبقاً مع HMG/BD
+          وتحديد موضوع الاجتماع: MobED، DAL-e، تشغيل مبانٍ ذكية، أو شراكة إقليمية.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="funding">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">02</span>
+        <h2 class="section__title">التمويل والقوة المالية</h2>
+      </div>
+      <div class="funding-grid">
+        <div class="glass-card">
+          <span class="dd-badge">لا جولة مستقلة</span>
+          <h3>رأس المال</h3>
+          <p>لا توجد جولة تمويل مستقلة معلنة لـ Robotics LAB، ولا يوجد تقييم منفصل منشور للمختبر.</p>
+        </div>
+        <div class="glass-card">
+          <span class="dd-badge">ملكية استراتيجية</span>
+          <h3>Boston Dynamics</h3>
+          <p>Hyundai Motor Group تملك Boston Dynamics، ما يربط المختبر بمنظومة روبوتات متقدمة وصناعية عالمية.</p>
+        </div>
+        <div class="glass-card">
+          <span class="dd-badge">ميزانية مجموعة</span>
+          <h3>قراءة المستثمر</h3>
+          <p>القوة المالية عالية جداً عبر المجموعة، لكن القرار ليس قرار startup سريع؛ هو قرار مؤسسي مركزي متعدد المصالح.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">03</span>
+        <h2 class="section__title">المنتجات والمنصات</h2>
+        <p class="section__subtitle">التركيز العملي: روبوتات خدمة ومبانٍ ذكية وتنقل، لا روبوت منزلي متعدد المهام للمستهلك.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">DAL-e</span>
+          <span class="pricing-card__price">خدمة وإرشاد داخلي</span>
+          <p>روبوت خدمة/إرشاد داخلي يعتمد على PnD، مع 2D lidar وكاميرات. نشر في بيئات Hyundai وفروعها.</p>
+        </div>
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">نشر فعلي</span>
+          <span class="pricing-card__type">DAL-e Delivery</span>
+          <span class="pricing-card__price">توصيل داخلي</span>
+          <p>توصيل نقطة لنقطة داخل المباني، مع 2×3D lidar و4 كاميرات وFace ID بدقة معلنة 99.9% في بيان HMG. نُشر في Factorial Seongsu.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">MobED</span>
+          <span class="pricing-card__price">منصة تنقل</span>
+          <p>منصة تنقل Basic/Pro؛ حائزة CES 2026 Best of Innovation. بيان HMG حول iREX 2025 يشير لمبيعات متوقعة في النصف الأول من العام التالي للإعلان. السعر غير معلن.</p>
+        </div>
+      </div>
+      <div class="swot-grid" style="margin-top: 1rem;">
+        <div class="glass-card">
+          <h3>Atlas / Spot عبر Boston Dynamics</h3>
+          <p>قيمة تقنية عالية لكنها أقرب للصناعة، المصانع، السلامة، والتشغيل الميداني من الاستخدام المنزلي.</p>
+        </div>
+        <div class="glass-card">
+          <h3>X-ble Exoskeletons</h3>
+          <p>هياكل مساعدة صناعية/طبية. مهمة لفهم توجه HMG في تعزيز العمالة والسلامة، وليست روبوتات منزلية.</p>
+        </div>
+        <div class="glass-card">
+          <h3>حدود الملاءمة المنزلية</h3>
+          <p>لا يظهر حالياً منتج منزلي متعدد المهام للمستهلك مع سعر، ضمان، توزيع، وخدمة ما بعد البيع.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Robot Total Solution</h3>
+          <p>المنطق التجاري الأقوى هو تشغيل مبانٍ ذكية: إرشاد، توصيل، حركة داخلية، وربط مع العقارات.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="partners">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">04</span>
+        <h2 class="section__title">الشركاء والسياق التجاري</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">Factorial Seongsu</span>
+          <p>أهم مثال منشور على تطبيق DAL-e Delivery ضمن بيئة مبانٍ ذكية.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">فروع Hyundai</span>
+          <p>DAL-e يستخدم كروبوت خدمة وإرشاد في سياقات مرتبطة بالعلامة وتجربة العملاء.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">Boston Dynamics</span>
+          <p>أصل استراتيجي يفتح باب الصناعة والمصانع، خصوصاً عند الحديث عن Atlas وSpot.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">Kia</span>
+          <p>جزء من منظومة HMG وقد تظهر الصلة في التصنيع، التنقل، أو التجارب التشغيلية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">05</span>
+        <h2 class="section__title">التسعير وخطة الطريق</h2>
+      </div>
+      <div class="two-col">
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">السعر التجاري</span>
+          <span class="pricing-card__price">غير معلن</span>
+          <p>السعر غير معلن — يحتاج عرض سعر رسمي. لا ينبغي افتراض سعر شراء أو اشتراك للمستهلك.</p>
+        </div>
+        <div class="glass-card">
+          <h3>نموذج البيع المرجح</h3>
+          <p>B2B للمباني الذكية، العقارات، الفروع، أو المشاريع المؤسسية. المسار الأقرب هو licensing / project deployment وليس بيعاً منزلياً مباشراً.</p>
+        </div>
+      </div>
+      <div class="timeline" style="margin-top: 2rem;">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2025–2026</span>
+            <h4>MobED وRobot Total Solution</h4>
+            <p>توسيع منصات التنقل والحلول الروبوتية للمباني، مع اهتمام واضح بالتشغيل الواقعي وليس العرض المختبري فقط.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">حوالي 2028</span>
+            <h4>Atlas في مصانع HMG</h4>
+            <p>سياق صناعي منشور إعلامياً عبر AP يشير إلى استخدام Atlas داخل مصانع HMG حول 2028؛ ليس مؤشراً مباشراً على منتج منزلي.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="visit">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">06</span>
+        <h2 class="section__title">تقييم الزيارة وأسئلة Due Diligence</h2>
+      </div>
+      <div class="assessment-grid">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>أهمية الزيارة</span>
+            <span class="assessment-card__score">مرتفعة</span>
+          </div>
+          <p>مهمة جداً لفهم منظومة الخدمة والمباني الذكية، وطريقة تفكير HMG في الروبوت كجزء من البنية العقارية والتنقل.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>ملاءمة روبوت منزلي</span>
+            <span class="assessment-card__score">منخفضة</span>
+          </div>
+          <p>ليست مورّداً واضحاً لروبوت منزلي متعدد المهام وجاهز للبيع للمستهلك أو القنوات المنزلية.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>ملاءمة الخليج</span>
+            <span class="assessment-card__score">متوسطة / عالية</span>
+          </div>
+          <p>الفرصة الأقوى في العقارات الذكية، الضيافة، المولات، الجامعات، والمجمعات المختلطة.</p>
+        </div>
+      </div>
+      <div class="glass-card" style="margin-top: 1rem;">
+        <h3>أسئلة يجب حسمها في الاجتماع</h3>
+        <ol class="dd-questions">
+          <li>ما الشروط التجارية لـ MobED Basic/Pro: بيع، إيجار، RaaS، أم مشروع مخصص؟</li>
+          <li>هل DAL-e وDAL-e Delivery متاحان للترخيص خارج كوريا، أم فقط ضمن مشاريع HMG؟</li>
+          <li>ما متطلبات التكامل مع المصاعد، بوابات الدخول، أنظمة الأمن، وأنظمة إدارة المباني في الخليج؟</li>
+          <li>هل توجد نية لشراكة GCC أو وكيل محلي أو مشروع مشترك JV؟ ومن صاحب القرار داخل المجموعة؟</li>
+          <li>ما مستويات الدعم، الضمان، قطع الغيار، وSLA المطلوبة لتشغيل متعدد المواقع؟</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sources">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">07</span>
+        <h2 class="section__title">المصادر المستخدمة</h2>
+        <p class="section__subtitle">مصادر رسمية أولاً، مع وضع تحذير واضح على العناوين المنشورة في أدلة ثانوية.</p>
+      </div>
+      <div class="sources-grid">
+        <div class="glass-card">
+          <h3>HMG Official Stories / News</h3>
+          <p>بيانات Hyundai Motor Group حول Robotics LAB، DAL-e، DAL-e Delivery، MobED، وFactorial Seongsu.</p>
+        </div>
+        <div class="glass-card">
+          <h3>CES 2026</h3>
+          <p>إشارات الجوائز والابتكار المرتبطة بـ MobED، مع ضرورة الرجوع للبيانات الرسمية عند التفاوض.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Factorial Seongsu Press</h3>
+          <p>مصدر مهم لفهم تطبيق DAL-e Delivery في مبنى ذكي حقيقي.</p>
+        </div>
+        <div class="glass-card">
+          <h3>aparobot وأدلة ثانوية</h3>
+          <p>تستخدم فقط كقرائن لعناوين Uiwang أو بيانات الاتصال؛ يجب تأكيدها رسمياً قبل الزيارة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Due Diligence قبل الزيارة — Hyundai Motor Group Robotics LAB</p>
+      <a href="../south-korea-home-robotics.html">العودة إلى تقرير الروبوتات المنزلية في سيول</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -16,24 +16,35 @@
     <nav class="nav container">
       <a href="#hero" class="nav__brand">
         <span class="nav__brand-dot"></span>
-        <span>Seoul Robotics</span>
+        <span>سيول · كوريا</span>
       </a>
       <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__menu" id="navMenu">
         <li><a href="index.html" class="nav__link">Weave Robotics</a></li>
-        <li><a href="#hero" class="nav__link active">الرئيسية</a></li>
+        <li><a href="#hero" class="nav__link active">فهرس سيول</a></li>
         <li><a href="#summary" class="nav__link">الملخص</a></li>
-        <li><a href="#companies" class="nav__link">الشركات</a></li>
-        <li><a href="#samsung" class="nav__link">Samsung</a></li>
-        <li><a href="#hyodol" class="nav__link">Hyodol</a></li>
-        <li><a href="#lg" class="nav__link">LG</a></li>
-        <li><a href="#luxrobo" class="nav__link">LUXROBO</a></li>
-        <li><a href="#comparison" class="nav__link">المقارنة</a></li>
+        <li class="nav__item--dropdown" id="reportsDropdown">
+          <button type="button" class="nav__link nav__dropdown-btn" aria-expanded="false">تقارير الشركات</button>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-label">Due Diligence · قبل الزيارة</li>
+            <li><a href="due-diligence/rlwrld.html">01 · RLWRLD</a></li>
+            <li><a href="due-diligence/hyundai-robotics-lab.html">02 · Hyundai Robotics LAB</a></li>
+            <li><a href="due-diligence/neubility.html">03 · Neubility</a></li>
+            <li><a href="due-diligence/robotis.html">04 · ROBOTIS</a></li>
+            <li><a href="due-diligence/robocare.html">05 · RoboCare</a></li>
+            <li><a href="due-diligence/hyodol.html">06 · Hyodol</a></li>
+            <li class="nav__dropdown-label">نظرة السوق</li>
+            <li><a href="#samsung">Samsung · Ballie</a></li>
+            <li><a href="#lg">LG · CLOiD</a></li>
+            <li><a href="#luxrobo">LUXROBO</a></li>
+          </ul>
+        </li>
+        <li><a href="#due-diligence" class="nav__link">فهرس التقارير</a></li>
         <li><a href="#conclusion" class="nav__link">الخلاصة</a></li>
       </ul>
-      <a href="#companies" class="nav__cta">قراءة التقرير</a>
+      <a href="#due-diligence" class="nav__cta">افتح التقارير</a>
     </nav>
   </header>
 
@@ -43,8 +54,8 @@
       <div class="hero__badge">تقرير استخباراتي · آخر تحديث: يوليو 2026</div>
       <h1 class="hero__title">تقرير استخباراتي<br><span>الروبوتات المنزلية في سيول</span></h1>
       <p class="hero__desc">
-        تحليل استخباراتي عميق لأربع شركات كورية جنوبية — مع الأسعار والاشتراكات والعناوين،
-        وصفحة تحليل مستقلة لكل شركة.
+        نظرة سوق + تقارير Due Diligence قبل الزيارة لست شركات ذات أولوية —
+        مع تمييز واضح بين الروبوت المنزلي التجاري، والرعاية، والتوصيل، وPhysical AI.
       </p>
       <div class="hero__stats">
         <div class="stat-card glass">
@@ -53,15 +64,29 @@
         </div>
         <div class="stat-card glass">
           <span class="stat-card__label">المدينة</span>
-          <span class="stat-card__value">سيول</span>
+          <span class="stat-card__value">سيول · سيول الكبرى</span>
         </div>
         <div class="stat-card glass">
-          <span class="stat-card__label">الشركات</span>
-          <span class="stat-card__value">4 تحليلات عميقة</span>
+          <span class="stat-card__label">Due Diligence</span>
+          <span class="stat-card__value">6 تقارير زيارة</span>
         </div>
         <div class="stat-card glass">
-          <span class="stat-card__label">المصادر</span>
-          <span class="stat-card__value">رسمية · حكومية · إعلامية</span>
+          <span class="stat-card__label">السوق</span>
+          <span class="stat-card__value">Samsung · LG · Hyodol · LUXROBO</span>
+        </div>
+      </div>
+
+      <div class="report-bar" style="position:static;margin-top:2rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);">
+        <div class="report-bar__inner" style="padding:0.85rem 1rem;">
+          <span class="report-bar__home">تقارير الزيارة</span>
+          <div class="report-bar__links">
+            <a href="due-diligence/rlwrld.html">01 · RLWRLD</a>
+            <a href="due-diligence/hyundai-robotics-lab.html">02 · Hyundai LAB</a>
+            <a href="due-diligence/neubility.html">03 · Neubility</a>
+            <a href="due-diligence/robotis.html">04 · ROBOTIS</a>
+            <a href="due-diligence/robocare.html">05 · RoboCare</a>
+            <a href="due-diligence/hyodol.html">06 · Hyodol</a>
+          </div>
         </div>
       </div>
     </div>
@@ -88,17 +113,94 @@
         <div class="summary__verdict">
           <span class="summary__verdict-label">الحكم الأولي</span>
           <p>السوق الكوري ناضج تقنياً لكنه غير ناضج تجارياً في الروبوتات المنزلية الشاملة.
-          Hyodol النموذج الأكثر واقعية في النشر؛ LG الأكثر طموحاً تقنياً على المدى الطويل.</p>
+          Hyodol النموذج الأكثر واقعية في النشر المنزلي؛ RLWRLD الأقوى في Physical AI؛
+          Neubility الأقوى في التوصيل الحضري — وليست كلها «روبوتات منزلية».</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Market -->
-  <section class="section section--alt" id="market">
+  <!-- Due Diligence Index -->
+  <section class="section section--alt" id="due-diligence">
     <div class="container">
       <div class="section__header">
         <span class="section__tag">02</span>
+        <h2 class="section__title">تقارير Due Diligence قبل الزيارة</h2>
+        <p class="section__subtitle">
+          تقارير مستقلة بهوية قانونية · تمويل · منتجات · أسعار · تقييم زيارة —
+          مرتبة حسب أولوية اللقاء في سيول
+        </p>
+      </div>
+
+      <div class="glass-card summary" style="margin-bottom:1.5rem;">
+        <p class="summary__lead">
+          هذه الصفحات ليست مقالات تعريفية. هدفها تجهيز الرئيس قبل الزيارة:
+          ماذا تبيع الشركة فعلاً، هل يمكن زيارتها، وهل تناسب ملف الروبوتات المنزلية أم لا.
+        </p>
+        <p>
+          <strong>مستبعدة حتى التحقق:</strong> TAETIC — لا أدلة مؤسسية/مالية كافية لتقرير استثماري موثوق.
+          <strong>فئة ثانية (ليست منزلاً خالصاً):</strong> Rebodis · Angel Robotics · Seoul Robotics · Caring · Maum AI.
+        </p>
+      </div>
+
+      <div class="founders-grid">
+        <a href="due-diligence/rlwrld.html" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>01 · RLWRLD</span></div>
+          <h3>RLWRLD</h3>
+          <p class="founder-card__role">Physical AI · RLDX-1</p>
+          <p class="dd-flag dd-flag--warn" style="display:block;margin:0.75rem 0;font-size:0.82rem;">ليس روبوتاً منزلياً جاهزاً</p>
+          <p><strong>التمويل:</strong> ~$41M (Seed 1+2)</p>
+          <p><strong>المقر:</strong> Gangnam · سيول</p>
+        </a>
+        <a href="due-diligence/hyundai-robotics-lab.html" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>02 · HMG</span></div>
+          <h3>Hyundai Robotics LAB</h3>
+          <p class="founder-card__role">DAL-e · MobED · Smart Building</p>
+          <p class="dd-flag dd-flag--warn" style="display:block;margin:0.75rem 0;font-size:0.82rem;">وحدة مجموعة · ليست startup منزلية</p>
+          <p><strong>التمويل:</strong> عبر Hyundai Motor Group</p>
+          <p><strong>المقر:</strong> سيول / أويوانغ</p>
+        </a>
+        <a href="due-diligence/neubility.html" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>03 · Neubility</span></div>
+          <h3>Neubility</h3>
+          <p class="founder-card__role">Neubie · توصيل حضري · RaaS</p>
+          <p class="dd-flag dd-flag--warn" style="display:block;margin:0.75rem 0;font-size:0.82rem;">خارج المنزل · خدمات حضرية</p>
+          <p><strong>التمويل:</strong> ~53B KRW معلن + Series B</p>
+          <p><strong>المقر:</strong> Seongsu · سيول</p>
+        </a>
+        <a href="due-diligence/robotis.html" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>04 · ROBOTIS</span></div>
+          <h3>ROBOTIS</h3>
+          <p class="founder-card__role">Dynamixel · منصات · خدمة</p>
+          <p class="dd-flag dd-flag--ok" style="display:block;margin:0.75rem 0;font-size:0.82rem;">مدرجة · سلسلة توريد قابلة للزيارة</p>
+          <p><strong>التمويل:</strong> KOSDAQ 108490</p>
+          <p><strong>المقر:</strong> Magok · سيول</p>
+        </a>
+        <a href="due-diligence/robocare.html" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>05 · RoboCare</span></div>
+          <h3>RoboCare</h3>
+          <p class="founder-card__role">SILBOT · BOMI · رعاية</p>
+          <p class="dd-flag dd-flag--ok" style="display:block;margin:0.75rem 0;font-size:0.82rem;">رعاية منزلية / مؤسسات</p>
+          <p><strong>التمويل:</strong> غير معلن بوضوح</p>
+          <p><strong>المقر:</strong> Seongnam · سيول الكبرى</p>
+        </a>
+        <a href="due-diligence/hyodol.html" class="glass-card founder-card" style="text-decoration:none;">
+          <div class="visual-block visual-block--sm"><span>06 · Hyodol</span></div>
+          <h3>Hyodol</h3>
+          <p class="founder-card__role">روبوت رعاية منزلي تجاري</p>
+          <p class="dd-flag dd-flag--ok" style="display:block;margin:0.75rem 0;font-size:0.82rem;">أقرب للمنزل · سعر معلن</p>
+          <p><strong>السعر:</strong> 1,600,000 ₩</p>
+          <p><strong>المقر:</strong> Anyang · سيول الكبرى</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market -->
+  <section class="section" id="market">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">03</span>
         <h2 class="section__title">نظرة عامة على السوق</h2>
       </div>
       <div class="two-col">
@@ -117,12 +219,12 @@
   </section>
 
   <!-- Companies Index -->
-  <section class="section" id="companies">
+  <section class="section section--alt" id="companies">
     <div class="container">
       <div class="section__header">
-        <span class="section__tag">03</span>
-        <h2 class="section__title">فهرس الشركات</h2>
-        <p class="section__subtitle">انقر على أي شركة للانتقال إلى تحليلها وتقييمها العميق</p>
+        <span class="section__tag">04</span>
+        <h2 class="section__title">فهرس شركات السوق (تحليل سابق)</h2>
+        <p class="section__subtitle">Samsung · Hyodol · LG · LUXROBO — نظرة سوقية؛ لتقارير الزيارة استخدم قسم Due Diligence أعلاه</p>
       </div>
       <div class="founders-grid">
         <a href="#samsung" class="glass-card founder-card" style="text-decoration:none;">
@@ -132,12 +234,12 @@
           <p><strong>السعر:</strong> غير معلن · مُعلّق تجارياً</p>
           <p><strong>العنوان:</strong> Suwon · سيول</p>
         </a>
-        <a href="#hyodol" class="glass-card founder-card" style="text-decoration:none;">
+        <a href="due-diligence/hyodol.html" class="glass-card founder-card" style="text-decoration:none;">
           <div class="visual-block visual-block--sm"><span>Hyodol</span></div>
           <h3>Hyodol</h3>
           <p class="founder-card__role">روبوت رعاية مسنّين</p>
           <p><strong>السعر:</strong> 1,600,000 ₩</p>
-          <p><strong>العنوان:</strong> Anyang · سيول الكبرى</p>
+          <p><strong>Due Diligence:</strong> تقرير زيارة كامل ←</p>
         </a>
         <a href="#lg" class="glass-card founder-card" style="text-decoration:none;">
           <div class="visual-block visual-block--sm"><span>LG · CLOiD</span></div>
@@ -257,7 +359,10 @@
       <div class="section__header">
         <span class="section__tag">شركة 02</span>
         <h2 class="section__title">Hyodol (㈜ 효돌)</h2>
-        <p class="section__subtitle">تحليل وتقييم عميق</p>
+        <p class="section__subtitle">
+          تحليل سوقي مختصر —
+          <a href="due-diligence/hyodol.html" style="color:var(--accent);font-weight:700;">تقرير Due Diligence الكامل قبل الزيارة ←</a>
+        </p>
       </div>
 
       <div class="pricing-grid">

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="تقرير Due Diligence قبل الزيارة — Neubility">
+  <title>Due Diligence — Neubility</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .dd-badge { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .9rem; border-radius: 999px; background: var(--accent-subtle); color: var(--accent); font-size: .85rem; font-weight: 700; margin: 0 .25rem .5rem 0; }
+    .dd-flag { display: inline-flex; align-items: center; padding: .35rem .75rem; border-radius: 999px; border: 1px solid var(--border-strong); color: var(--text-secondary); font-size: .82rem; font-weight: 700; margin: .2rem; }
+    .dd-flag--ok { background: rgba(45, 74, 62, .09); color: var(--accent); border-color: rgba(45, 74, 62, .18); }
+    .dd-flag--warn { background: rgba(154, 139, 111, .13); color: #746346; border-color: rgba(154, 139, 111, .24); }
+    .dd-flag--risk { background: rgba(141, 52, 52, .09); color: #8d3434; border-color: rgba(141, 52, 52, .18); }
+    .dd-meta { display: grid; gap: .75rem; margin-top: 1rem; color: var(--text-secondary); }
+    .dd-meta p { margin: 0; }
+    .dd-questions { padding-inline-start: 1.1rem; list-style: decimal; color: var(--text-secondary); }
+    .dd-questions li { margin-bottom: .65rem; }
+    .dd-list { padding-inline-start: 1rem; list-style: disc; color: var(--text-secondary); }
+    .dd-list li { margin-bottom: .45rem; }
+  </style>
+</head>
+<body class="has-report-bar">
+
+    <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../south-korea-home-robotics.html" class="nav__brand">
+        <span class="nav__brand-dot"></span>
+        <span>سيول · كوريا</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="../index.html" class="nav__link">Weave Robotics</a></li>
+        <li><a href="../south-korea-home-robotics.html" class="nav__link">فهرس سيول</a></li>
+        <li class="nav__item--dropdown">
+          <button type="button" class="nav__link nav__dropdown-btn" aria-expanded="false">تقارير الشركات</button>
+          <ul class="nav__dropdown">
+            <li class="nav__dropdown-label">Due Diligence · قبل الزيارة</li>
+            <li><a href="rlwrld.html">01 · RLWRLD</a></li>
+            <li><a href="hyundai-robotics-lab.html">02 · Hyundai LAB</a></li>
+            <li><a href="neubility.html" class="active">03 · Neubility</a></li>
+            <li><a href="robotis.html">04 · ROBOTIS</a></li>
+            <li><a href="robocare.html">05 · RoboCare</a></li>
+            <li><a href="hyodol.html">06 · Hyodol</a></li>
+          </ul>
+        </li>
+        <li><a href="#identity" class="nav__link">الهوية</a></li>
+        <li><a href="#funding" class="nav__link">التمويل</a></li>
+        <li><a href="#products" class="nav__link">المنتجات</a></li>
+        <li><a href="#visit" class="nav__link active">الزيارة</a></li>
+      </ul>
+      <a href="../south-korea-home-robotics.html#due-diligence" class="nav__cta">كل التقارير</a>
+    </nav>
+  </header>
+
+  <div class="report-bar">
+    <div class="container report-bar__inner">
+      <a href="../south-korea-home-robotics.html" class="report-bar__home">← سيول · كوريا</a>
+      <div class="report-bar__links">
+        <a href="rlwrld.html">01 · RLWRLD</a>
+        <a href="hyundai-robotics-lab.html">02 · Hyundai LAB</a>
+        <a href="neubility.html" class="active">03 · Neubility</a>
+        <a href="robotis.html">04 · ROBOTIS</a>
+        <a href="robocare.html">05 · RoboCare</a>
+        <a href="hyodol.html">06 · Hyodol</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__badge">Due Diligence · قبل الزيارة · يوليو 2026</div>
+      <h1 class="hero__title">Neubility<br><span>뉴빌리티</span></h1>
+      <p class="hero__desc">
+        روبوتات توصيل وخدمات خارجية — ليست روبوتات منزلية متعددة المهام. الشركة مناسبة لدراسة RaaS
+        والتوصيل الحضري وتشغيل الروبوتات في بيئات خليجية، لا كمورّد مباشر لروبوت منزلي داخلي.
+      </p>
+      <div>
+        <span class="dd-badge">Delivery Robotics</span>
+        <span class="dd-flag dd-flag--ok">تشغيل ميداني في كوريا</span>
+        <span class="dd-flag dd-flag--warn">تسعير RaaS غير معلن</span>
+        <span class="dd-flag dd-flag--risk">ليس منتجاً منزلياً جاهزاً</span>
+      </div>
+      <div class="hero__stats">
+        <div class="stat-card glass">
+          <span class="stat-card__label">التأسيس</span>
+          <span class="stat-card__value">2017</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المقر</span>
+          <span class="stat-card__value">Seongsu, Seoul</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المنتجات</span>
+          <span class="stat-card__value">Neubie · Patrol</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">التمويل المعلن</span>
+          <span class="stat-card__value">~53B KRW / ~$37M</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="identity">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">01</span>
+        <h2 class="section__title">هوية الشركة وموقع الزيارة</h2>
+        <p class="section__subtitle">شركة ناشئة تشغيلية في التوصيل الذاتي، مع بنية تصنيع وتجارب ميدانية في Seongsu.</p>
+      </div>
+      <div class="two-col">
+        <div class="glass-card summary">
+          <p class="summary__lead"><strong>Neubility / 뉴빌리티</strong></p>
+          <p>
+            Neubility شركة روبوتات توصيل ذاتية تأسست عام 2017. تركز على الروبوتات الخارجية منخفضة
+            التكلفة نسبياً عبر كاميرات وV-SLAM بدلاً من LiDAR مرتفع التكلفة، وتبيع الفكرة كنظام تشغيل
+            وخدمة RaaS لا كجهاز استهلاكي منزلي.
+          </p>
+          <div class="dd-meta">
+            <p><strong>المؤسس والرئيس التنفيذي:</strong> Lee Sang-min، ويظهر في بعض التقارير الإنجليزية باسم Sangmin Lee أو Andrew Lee.</p>
+            <p><strong>الموظفون:</strong> 63 موظفاً حتى نهاية سبتمبر 2025 بحسب Yonhap.</p>
+            <p><strong>طبيعة الزيارة:</strong> مناسبة لتقييم التشغيل، الأسطول، البرمجيات، التصنيع، والشراكة الإقليمية.</p>
+          </div>
+        </div>
+        <div class="glass-card hq-card">
+          <div class="hq-card__icon">HQ</div>
+          <div>
+            <h3>العنوان والمنشأة</h3>
+            <p><strong>المقر المنشور:</strong> 115 Wangsimni-ro, Seongdong-gu, Seoul، Heyground 2F، بحسب CB Insights.</p>
+            <p><strong>Seongsu Physical AI Center:</strong> مصنع/مكتب بمساحة تقارب 869 م² قيد التشغيل، ويُذكر كموقع فعلي للتجارب والتصنيع.</p>
+            <p><strong>الزيارة:</strong> قابلة للتنسيق على مستوى مقر/مصنع Seongsu، مع منطقة عرض فعلية مرتبطة بتجارب Yogiyo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="funding">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">02</span>
+        <h2 class="section__title">التمويل والمستثمرون</h2>
+        <p class="section__subtitle">الأرقام هنا للتمويل المعلن فقط؛ لا يوجد تقييم valuation موثوق منشور يجب اعتماده.</p>
+      </div>
+      <div class="funding-grid">
+        <div class="glass-card">
+          <span class="dd-badge">Series A</span>
+          <h3>حوالي 21 مليون دولار</h3>
+          <p>جولة بقيادة IMM، مذكورة في TechCrunch sponsored، مع مستثمرين مثل Lotte وShinsegae وSKT وKakao وKB وSamsung Welstory و42dot.</p>
+        </div>
+        <div class="glass-card">
+          <span class="dd-badge">Samsung Venture</span>
+          <h3>3B KRW</h3>
+          <p>استثمار مذكور في KED عام 2023، مهم لأنه يشير إلى اهتمام استراتيجي من منظومة كورية كبيرة.</p>
+        </div>
+        <div class="glass-card">
+          <span class="dd-badge">Series B · Dec 2025</span>
+          <h3>~17M USD / 25.1B KRW</h3>
+          <p>بحسب Wowtale، بمشاركة KDB وIBK وEnvisioning Partners وICF وCrit Ventures وغيرهم.</p>
+        </div>
+      </div>
+      <div class="glass-card" style="margin-top: 1rem;">
+        <span class="dd-flag dd-flag--ok">Yonhap: 53B KRW cumulative</span>
+        <span class="dd-flag dd-flag--ok">Wowtale: total ~$37.4M بعد Series B</span>
+        <span class="dd-flag dd-flag--warn">CB Insights قد يعرض ~$61M</span>
+        <p style="margin-top: 1rem;">
+          القراءة المحافظة: التمويل التراكمي المعلن يدور حول 53 مليار وون كوري أو نحو 37 مليون دولار
+          وفق Yonhap/Wowtale. بعض قواعد البيانات مثل CB Insights قد تعرض أرقاماً أعلى تقارب 61 مليون
+          دولار؛ يجب التعامل معها بحذر حتى تُطابق مع بيانات الشركة أو مستندات الاستثمار.
+        </p>
+        <p><strong>لا تخترع valuation:</strong> لا يوجد تقييم أعمال موثق كافٍ للاستخدام في مفاوضات أو تقرير استثماري دون تأكيد رسمي.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">03</span>
+        <h2 class="section__title">المنتجات والتشغيل</h2>
+        <p class="section__subtitle">محفظة موجهة للتوصيل الحضري والأمن والخدمات الخارجية، مع مشاريع تطوير لم تُصبح منتجات منزلية.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">المنتج الرئيسي</span>
+          <span class="pricing-card__type">Neubie</span>
+          <span class="pricing-card__price">توصيل ذاتي حضري</span>
+          <p>روبوت توصيل خارجي يعتمد على كاميرات وV-SLAM بدل LiDAR مرتفع التكلفة، بهدف خفض تكلفة الأسطول وزيادة قابلية النشر.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">Neubie Patrol</span>
+          <span class="pricing-card__price">دورية أمنية</span>
+          <p>نسخة خدمات أمنية ودوريات، مرتبطة منطقياً بالشراكات مع شركات أمن واتصالات.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">RaaS + NeubieGo API</span>
+          <span class="pricing-card__price">منصة تشغيل</span>
+          <p>المنتج الحقيقي ليس العربة فقط، بل منصة إدارة الأسطول والطلبات والتكامل عبر API.</p>
+        </div>
+      </div>
+      <div class="swot-grid" style="margin-top: 1rem;">
+        <div class="glass-card">
+          <h3>Heavy-duty Logistics Robot</h3>
+          <p>قيد التطوير. يجب طلب مرحلة النضج، الوزن، الحمولة، بيئة التشغيل، وموعد التجارب التجارية.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Humanoid مساعد عمال</h3>
+          <p>قيد التطوير وليس منتجاً منزلياً جاهزاً. يجب عدم إدخاله في تقييم شراء قريب دون دليل تشغيل.</p>
+        </div>
+        <div class="glass-card">
+          <h3>التشغيل الميداني</h3>
+          <p>تشغيل في نحو 50 موقعاً بكوريا، بما يشمل Songdo ومناطق جنوب سيول، بحسب التغطيات الإعلامية.</p>
+        </div>
+        <div class="glass-card">
+          <h3>الحدود المنزلية</h3>
+          <p>قد تخدم مجمعات سكنية أو بوابات توصيل، لكنها ليست روبوتاً داخلياً متعدد المهام للأسرة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="partners">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">04</span>
+        <h2 class="section__title">الشركاء والتوسع</h2>
+      </div>
+      <div class="highlights-grid">
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">Yogiyo</span>
+          <p>شريك مهم لتجارب التوصيل والعرض التشغيلي في Seongsu.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">Samsung C&amp;T</span>
+          <p>صلة محتملة بالعقارات والمجمعات الذكية، مهمة لسوق الخليج.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">SK Telecom / SK Shieldus</span>
+          <p>يدعم منطق الاتصال، الأمن، والدوريات الروبوتية.</p>
+        </div>
+        <div class="glass-card highlight-card">
+          <span class="highlight-card__num">KT · Lotte Innovate</span>
+          <p>شراكات تشغيلية وتقنية مرتبطة بالبنية التحتية والتجزئة والخدمات.</p>
+        </div>
+      </div>
+      <div class="glass-card" style="margin-top: 1rem;">
+        <span class="dd-flag dd-flag--warn">Japan / Saudi مذكوران إعلامياً</span>
+        <p style="margin-top: 1rem;">
+          التوسع في اليابان والسعودية مذكور إعلامياً، لكنه يحتاج تدقيقاً مباشراً: هل هناك وكيل، مشروع
+          تجريبي، مذكرة تفاهم، أم تشغيل تجاري قائم؟ هذه نقطة محورية قبل افتراض جاهزية الخليج.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">05</span>
+        <h2 class="section__title">التسعير وخطة الطريق</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">تسعير تجاري</span>
+          <span class="pricing-card__type">RaaS باشتراك شهري</span>
+          <span class="pricing-card__price">غير معلن</span>
+          <p>السعر غير معلن — يحتاج عرض سعر رسمي. يجب طلب تكلفة شهرية لكل روبوت، رسوم إعداد، تكامل، صيانة، اتصال، ومشغلين.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">تكلفة تصنيع تاريخية</span>
+          <span class="pricing-card__price">5–6M KRW</span>
+          <p>تصريح CEO لـ KED 2023 أشار إلى تكلفة تصنيع مستهدفة عند الإنتاج الكبير. هذه تكلفة تصنيع وليست سعر بيع أو اشتراك.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">Valuation</span>
+          <span class="pricing-card__price">غير موثق</span>
+          <p>لا يوجد تقييم معلن كافٍ لاعتماده. يجب طلب cap table أو إفادة رسمية إذا كان الهدف استثماراً أو JV.</p>
+        </div>
+      </div>
+      <div class="timeline" style="margin-top: 2rem;">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2026</span>
+            <h4>تقييم أعمال قبل IPO</h4>
+            <p>Yonhap يشير إلى هدف تقديم تقييم أعمال في 2026 تمهيداً لمسار إدراج.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2027</span>
+            <h4>إدراج محتمل</h4>
+            <p>هدف IPO محتمل في 2027 بحسب التغطيات. يجب التعامل معه كخطة لا كالتزام مضمون.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">قيد التطوير</span>
+            <h4>Humanoid وHeavy-duty</h4>
+            <p>توسع في منتجات أكثر تعقيداً، لكنه يزيد احتياج التدقيق على الجاهزية، التكاليف، وموعد التسليم التجاري.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="visit">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">06</span>
+        <h2 class="section__title">تقييم الزيارة وأسئلة Due Diligence</h2>
+      </div>
+      <div class="assessment-grid">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>قيمة الزيارة</span>
+            <span class="assessment-card__score">مرتفعة</span>
+          </div>
+          <p>مفيدة لتقييم RaaS، إدارة الأسطول، التوصيل الحضري، التشغيل في الخارج، وقدرة الشركة على مشروع خليجي.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>ملاءمة المنزل الداخلي</span>
+            <span class="assessment-card__score">منخفضة</span>
+          </div>
+          <p>ليست مورّد روبوت منزلي داخلي متعدد المهام. أقصى صلة منزلية هي التوصيل للمجمعات أو إلى أبواب المباني.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>ملاءمة الخليج</span>
+            <span class="assessment-card__score">متوسطة / عالية</span>
+          </div>
+          <p>الفنادق، الجامعات، المدن الذكية، المجمعات السكنية، ومناطق المشاة قد تكون حالات استخدام مناسبة.</p>
+        </div>
+      </div>
+      <div class="glass-card" style="margin-top: 1rem;">
+        <h3>أسئلة يجب حسمها في الاجتماع</h3>
+        <ol class="dd-questions">
+          <li>ما تسعير RaaS الشهري لكل روبوت؟ وما الذي يشمله: الصيانة، الاتصال، البرمجيات، التأمين، وقطع الغيار؟</li>
+          <li>هل يوجد وكيل أو شريك فعلي في السعودية أو الخليج؟ وما نطاق الحقوق الجغرافية؟</li>
+          <li>ما متطلبات التشغيل في حرارة الخليج، الغبار، الأرصفة غير المنتظمة، واللوائح البلدية؟</li>
+          <li>ما نسبة نجاح التوصيل، الأعطال، التدخل البشري، وتكلفة التشغيل لكل طلب في المواقع الحالية؟</li>
+          <li>هل الشركة منفتحة على JV أو تصنيع/تجميع محلي أو شراكة مع مشغل عقاري؟</li>
+          <li>ما جاهزية Neubie Patrol وheavy-duty وhumanoid: عرض، pilot، أم منتج تجاري؟</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sources">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">07</span>
+        <h2 class="section__title">المصادر المستخدمة</h2>
+      </div>
+      <div class="sources-grid">
+        <div class="glass-card">
+          <h3>Yonhap · Oct 2025</h3>
+          <p>أرقام التمويل التراكمي، الموظفين، وخطة تقييم الأعمال/الإدراج المحتمل.</p>
+        </div>
+        <div class="glass-card">
+          <h3>Wowtale · Dec 2025</h3>
+          <p>تفاصيل Series B، قيمة 25.1B KRW، والمستثمرين المشاركين.</p>
+        </div>
+        <div class="glass-card">
+          <h3>KED · 2023</h3>
+          <p>استثمار Samsung Venture وتصريح تكلفة التصنيع المستهدفة؛ ليست سعراً تجارياً.</p>
+        </div>
+        <div class="glass-card">
+          <h3>TechCrunch Sponsored</h3>
+          <p>Series A وحزمة المستثمرين الاستراتيجيين حول Lotte وShinsegae وSKT وKakao وغيرهم.</p>
+        </div>
+        <div class="glass-card">
+          <h3>CB Insights</h3>
+          <p>عنوان Heyground وبيانات قواعد الاستثمار؛ أرقام التمويل الأعلى يجب مطابقتها بحذر مع مصادر الشركة.</p>
+        </div>
+        <div class="glass-card">
+          <h3>تغطيات إعلامية تشغيلية</h3>
+          <p>تشغيل Songdo، جنوب سيول، وشراكات Yogiyo وSamsung C&amp;T وSK Telecom/SK Shieldus وKT وLotte Innovate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Due Diligence قبل الزيارة — Neubility</p>
+      <a href="../south-korea-home-robotics.html">العودة إلى تقرير الروبوتات المنزلية في سيول</a>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
