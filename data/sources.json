@@ -1,0 +1,154 @@
+{
+  "sources": {
+    "s1": {
+      "id": "s1",
+      "title": "ECNS/IDC — حصص الشحنات العالمية 2025",
+      "url": "https://www.ecns.cn/m/news/sci-tech/2026-06-22/detail-ihffptmh9491386.shtml",
+      "type": "A"
+    },
+    "s2": {
+      "id": "s2",
+      "title": "iRobot — إتمام صفقة Picea",
+      "url": "https://media.irobot.com/2026-01-23-iRobot-Completes-Court-Supervised-Transaction-with-Picea%2C-Enabling-the-Next-Chapter-of-Growth",
+      "type": "A"
+    },
+    "s3": {
+      "id": "s3",
+      "title": "Picea Group",
+      "url": "https://www.piceacorp.com/",
+      "type": "A"
+    },
+    "s4": {
+      "id": "s4",
+      "title": "Ecovacs Group profile",
+      "url": "https://www.ecovacsgroup.com/en/about-us",
+      "type": "A"
+    },
+    "s5": {
+      "id": "s5",
+      "title": "SSE Ecovacs announcements",
+      "url": "https://english.sse.com.cn/",
+      "type": "A"
+    },
+    "s6": {
+      "id": "s6",
+      "title": "Dreame About",
+      "url": "https://www.dreametech.com/pages/about-us",
+      "type": "A"
+    },
+    "s7": {
+      "id": "s7",
+      "title": "Dreame Contact/factory",
+      "url": "https://global.dreametech.com/pages/contact-us",
+      "type": "B"
+    },
+    "s8": {
+      "id": "s8",
+      "title": "Roborock global",
+      "url": "https://global.roborock.com/",
+      "type": "A"
+    },
+    "s9": {
+      "id": "s9",
+      "title": "Narwal",
+      "url": "https://us.narwal.com/",
+      "type": "B"
+    },
+    "s10": {
+      "id": "s10",
+      "title": "Midea company profile",
+      "url": "https://www.midea.com/global/company-intro",
+      "type": "A"
+    },
+    "s11": {
+      "id": "s11",
+      "title": "Midea 2025 annual report HKEX",
+      "url": "https://www1.hkexnews.hk/",
+      "type": "A"
+    },
+    "s12": {
+      "id": "s12",
+      "title": "ILIFE official",
+      "url": "https://iliferobot.com/",
+      "type": "B"
+    },
+    "s13": {
+      "id": "s13",
+      "title": "تقرير خروج ILIFE من التصنيع التعاقدي",
+      "url": "https://kr-asia.com/former-oem-ilife-offers-a-blueprint-for-chinas-next-manufacturing-phase",
+      "type": "B"
+    },
+    "s14": {
+      "id": "s14",
+      "title": "Mamibot about",
+      "url": "https://www.mamibot.com/about-mamibot",
+      "type": "B"
+    },
+    "s15": {
+      "id": "s15",
+      "title": "Mamibot contact",
+      "url": "https://www.mamibot.com/contact",
+      "type": "B"
+    },
+    "s16": {
+      "id": "s16",
+      "title": "Royalmakers منصة Global Sources",
+      "url": "https://royalmakers.manufacturer.globalsources.com/",
+      "type": "B"
+    },
+    "s17": {
+      "id": "s17",
+      "title": "Silver Star",
+      "url": "https://www.silverstar-robot.net/about-silver-star/",
+      "type": "B"
+    },
+    "s18": {
+      "id": "s18",
+      "title": "Klinsmann",
+      "url": "https://robotklinsmann.com/",
+      "type": "B"
+    },
+    "s19": {
+      "id": "s19",
+      "title": "Minfu — تصنيع تعاقدي",
+      "url": "https://minfutech.com/",
+      "type": "B"
+    },
+    "s20": {
+      "id": "s20",
+      "title": "Aiper",
+      "url": "https://aiper.com/us/home",
+      "type": "A"
+    },
+    "s21": {
+      "id": "s21",
+      "title": "WYBOT",
+      "url": "https://www.wybotpool.com/",
+      "type": "B"
+    },
+    "s22": {
+      "id": "s22",
+      "title": "SASO",
+      "url": "https://www.saso.gov.sa/en/pages/default.aspx",
+      "type": "A"
+    },
+    "s23": {
+      "id": "s23",
+      "title": "TechSci Saudi cleaning robots",
+      "url": "https://www.techsciresearch.com/report/saudi-arabia-cleaning-robots-market/1778.html",
+      "type": "B"
+    },
+    "s24": {
+      "id": "s24",
+      "title": "IMARC Saudi cleaning robots",
+      "url": "https://www.imarcgroup.com/saudi-arabia-cleaning-robots-market",
+      "type": "B"
+    },
+    "s25": {
+      "id": "s25",
+      "title": "Amazon.sa price snapshots July 2026",
+      "url": "https://www.amazon.sa/",
+      "type": "C"
+    }
+  }
+}

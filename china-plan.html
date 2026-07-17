@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="حاسبة التكلفة الواصلة، خطة 90 يوماً، رحلة الصين، المخاطر ومصفوفة القرار.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="الخطة والأدوات — تقرير الصين">
+  <meta property="og:description" content="حاسبة التكلفة الواصلة، خطة 90 يوماً، رحلة الصين، المخاطر ومصفوفة القرار.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ar_SA">
+  <title>الخطة والأدوات — تقرير الصين</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=split1">
+</head>
+<body class="china-report-page" data-china-page="plan">
+
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="التنقل الرئيسي">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-dot"></span>
+        <span>الصين · روبوتات المنازل</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+            <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" class="nav__link">الرئيسية</a></li>
+        <li><a href="china-home-robotics.html" class="nav__link active" aria-current="page">الصين</a></li>
+        <li><a href="south-korea-home-robotics.html" class="nav__link">سيول</a></li>
+        <li><a href="weave-isaac.html" class="nav__link">تقرير Isaac</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button type="button" class="btn btn--ghost nav__print" id="printReport" aria-label="طباعة أو حفظ PDF">طباعة / ملف PDF</button>
+        <a href="china-sources.html" class="nav__cta">المصادر</a>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="cr-subnav" aria-label="أقسام تقرير الصين">
+  <div class="container cr-subnav__inner">
+    <a href="china-home-robotics.html" class="cr-subnav__link">الملخص</a>
+    <a href="china-companies.html" class="cr-subnav__link">الشركات</a>
+    <a href="china-products.html" class="cr-subnav__link">المنتجات</a>
+    <a href="china-competition.html" class="cr-subnav__link">المنافسون</a>
+    <a href="china-saudi.html" class="cr-subnav__link">السعودية</a>
+    <a href="china-plan.html" class="cr-subnav__link is-active" aria-current="page">الخطة والأدوات</a>
+    <a href="china-sources.html" class="cr-subnav__link">المصادر</a>
+  </div>
+</nav>
+
+  <main id="main">
+    <section class="section cr-page-hero" id="page-hero">
+      <div class="container">
+        <div class="hero__badge">تقرير الصين · الخطة</div>
+        <h1 class="section__title" style="margin:0.5rem 0 0.75rem;">الخطة والأدوات</h1>
+        <p class="section__subtitle" style="margin:0;">حاسبة التكلفة · 90 يوماً · رحلة الصين · المخاطر</p>
+      </div>
+    </section>
+<!-- 8. Landed cost calculator -->
+    <section class="section" id="landed" aria-labelledby="landed-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">07</span>
+          <h2 class="section__title" id="landed-title">حاسبة التكلفة الواصلة</h2>
+          <p class="section__subtitle">قيم قابلة للتعديل — للتفاوض والتخطيط فقط</p>
+        </div>
+        <div class="cr-calc glass-card">
+          <p class="cr-disclaimer cr-disclaimer--box" role="note">
+            <strong>تنبيه:</strong> هذه الحاسبة تقديرية وليست عرض سعر أو فاتورة جمركية.
+            الرسوم الفعلية تعتمد على رمز النظام المنسق الجمركي والموديل والمخلّص وشروط التسليم الدولية والشهادات.
+          </p>
+          <form id="landedForm" class="cr-calc__form" onsubmit="return false;">
+            <label class="cr-field">
+              <span>سعر المصنع للوحدة ($)</span>
+              <input type="number" id="exw" value="250" min="0" step="1" inputmode="decimal">
+            </label>
+            <label class="cr-field">
+              <span>شحن + تأمين لكل وحدة ($)</span>
+              <input type="number" id="freight" value="35" min="0" step="1" inputmode="decimal">
+            </label>
+            <label class="cr-field">
+              <span>رسوم جمركية (%)</span>
+              <input type="number" id="duty" value="5" min="0" step="0.1" inputmode="decimal">
+            </label>
+            <label class="cr-field">
+              <span>ضريبة القيمة المضافة (%)</span>
+              <input type="number" id="vat" value="15" min="0" step="0.1" inputmode="decimal">
+            </label>
+            <label class="cr-field">
+              <span>تكاليف محلية / وحدة ($)</span>
+              <input type="number" id="local" value="40" min="0" step="1" inputmode="decimal" aria-describedby="localHelp">
+              <span class="cr-help" id="localHelp">تخليص · تخزين · فحص · لوجستيات داخلية</span>
+            </label>
+            <label class="cr-field">
+              <span>هامش مستهدف (%)</span>
+              <input type="number" id="margin" value="35" min="0" step="1" inputmode="decimal">
+            </label>
+          </form>
+          <div class="cr-calc__out" aria-live="polite">
+            <div><span>التكلفة والشحن والتأمين تقريبي</span><strong id="outCif">—</strong> <span class="data-badge data-badge--est">تقديري</span></div>
+            <div><span>ضريبة تقريباً</span><strong id="outVat">—</strong></div>
+            <div><span>التكلفة الواصلة</span><strong id="outLanded">—</strong> <span class="data-badge data-badge--est">تقديري</span></div>
+            <div class="cr-calc__retail"><span>سعر تجزئة مستهدف</span><strong id="outRetail">—</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- 9. 90-day timeline -->
+    <section class="section section--alt" id="ninety" aria-labelledby="ninety-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">08</span>
+          <h2 class="section__title" id="ninety-title">خط زمني — 90 يوماً</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass-card">
+              <span class="timeline__date">الأيام 1–30</span>
+              <h4>التحقق والاختبار</h4>
+              <p>إرسال 6 طلبات عروض أسعار · جمع عروض · اختيار 3 موردين · طلب عينات · بدء ملف سابر وهيئة الاتصالات.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass-card">
+              <span class="timeline__date">الأيام 31–60</span>
+              <h4>اختبار ميداني</h4>
+              <p>9–12 عينة في فلل سعودية · غبار/شعر/سجاد · تقييم التطبيق العربي · تقرير عيوب.</p>
+            </div>
+          </div>
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content glass-card">
+              <span class="timeline__date">الأيام 61–90</span>
+              <h4>تثبيت قبل أمر الشراء</h4>
+              <p>مورد أساسي + احتياطي · عقد قطع 3 سنوات · تثبيت المطابقة · قرار تجربة أولية 300–500 وحدة.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tech-grid" style="margin-top:1.5rem;">
+          <div class="glass-card tech-card"><h3>3–6 أشهر · تجربة أولية</h3><p>صنف واحد · بيع مباشر · مركز خدمة الرياض · مخزون قطع.</p></div>
+          <div class="glass-card tech-card tech-card--wide"><h3>6–18 شهراً · التوسع</h3><p>الفاخر بعد نجاح الأساسي · المسابح كخط ثانٍ · البيع المباشر وأمازون السعودية ونون ومتاجر الإلكترونيات.</p></div>
+        </div>
+      </div>
+    </section>
+<!-- 10. China trip timeline (not a fake map) -->
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">09</span>
+          <h2 class="section__title" id="visit-title">رحلة الصين — خط زمني 8 أيام</h2>
+          <p class="section__subtitle">مسار زيارات، ليس خريطة جغرافية مزيفة</p>
+        </div>
+        <ol class="cr-trip">
+          <li class="cr-trip__item glass-card">
+            <span class="cr-trip__day">1–3</span>
+            <div>
+              <h4>Shenzhen / Dongguan</h4>
+              <p>Picea · Royalmakers · Minfu · Silver Star · Narwal أو فريق دولي · مصنع مسابح بعد طلب عرض سعر.</p>
+            </div>
+          </li>
+          <li class="cr-trip__item glass-card">
+            <span class="cr-trip__day">4</span>
+            <div>
+              <h4>مختبر ومكونات</h4>
+              <p>اعتماد/سلامة · بطاريات أو محركات · تفتيش جهة خارجية.</p>
+            </div>
+          </li>
+          <li class="cr-trip__item glass-card">
+            <span class="cr-trip__day">5–6</span>
+            <div>
+              <h4>Suzhou</h4>
+              <p>Ecovacs · Dreame · Midea إن تأكد · معيار المقارنة صالة عرض.</p>
+            </div>
+          </li>
+          <li class="cr-trip__item glass-card">
+            <span class="cr-trip__day">7–8</span>
+            <div>
+              <h4>Shanghai ثم Ningbo</h4>
+              <p>Mamibot المقر · Klinsmann · مراجعة العقود مع مترجم تقني.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+<!-- 11. Risks + decision matrix -->
+    <section class="section section--alt" id="risks" aria-labelledby="risks-title">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">10</span>
+          <h2 class="section__title" id="risks-title">المخاطر ومصفوفة القرار</h2>
+        </div>
+        <div class="table-wrap glass-card">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>المخاطر</th>
+                <th>الأثر</th>
+                <th>التخفيف</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>مطابقة متأخرة / رفض شحنة</td><td>عالي</td><td>سابر قبل العربون · جهة تقويم معتمدة</td></tr>
+              <tr><td>جودة عينة ≠ إنتاج</td><td>عالي</td><td>فحص قبل الشحن قبل الشحن · عقد عيوب</td></tr>
+              <tr><td>تطبيق غير عربي / سيرفر غير واضح</td><td>متوسط–عالي</td><td>بند ملكية التطبيق واتفاقية مستوى الخدمة في العقد</td></tr>
+              <tr><td>نقص قطع الغيار</td><td>عالي</td><td>مخزون محلي + التزام توريد 3 سنوات</td></tr>
+              <tr><td>وسيط بلا مصنع</td><td>عالي</td><td>زيارة خط الإنتاج · الرخصة التجارية</td></tr>
+              <tr><td>حرب أسعار مع علامات القمة</td><td>متوسط</td><td>وعد خدمة/مواصفة سعودية لا «أرخص صيني»</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="cr-subhead">مصفوفة القرار</h3>
+        <div class="table-wrap glass-card">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>السيناريو</th>
+                <th>المسار</th>
+                <th>الشرط</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="compare-table__highlight">
+                <td>علامة سعودية قابلة للنمو</td>
+                <td>القائمة المختصرة (تصميم وتصنيع أو تصنيع تعاقدي)</td>
+                <td>عينات ناجحة + مطابقة + قطع</td>
+              </tr>
+              <tr>
+                <td>دخول سريع بأقل مخاطر تقنية</td>
+                <td>وكالة Ecovacs/Dreame/Roborock</td>
+                <td>حصرية/هامش مقبول</td>
+              </tr>
+              <tr>
+                <td>مسابح فلل واستراحات</td>
+                <td>وكالة Aiper + طلب عرض سعر WYBOT</td>
+                <td>اختبار ميداني منفصل</td>
+              </tr>
+              <tr>
+                <td>حدائق / جزّازات</td>
+                <td>Mammotion كحلول</td>
+                <td>تركيب وصيانة — لا صندوق فقط</td>
+              </tr>
+              <tr>
+                <td>بلا مركز خدمة وقطع</td>
+                <td>تأجيل العلامة الخاصة</td>
+                <td>توزيع رسمي أقل خطراً</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="glass-card final-verdict" style="margin-top:1.5rem;">
+          <h3>الوعد الصحيح</h3>
+          <p>ليس «أرخص روبوت صيني». الوعد الأفضل: <strong>روبوت تنظيف مصمم ومختبر لبيوت السعودية، بتطبيق عربي وقطع غيار وخدمة محلية حقيقية.</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__brand-dot"></span>
+        <span>تقرير خاص للرئيس علي الحربي — روبوتات المنازل · الصين</span>
+      </div>
+      <p class="footer__copy">© 2026 · تقرير داخلي · السعودية فقط · بيانات من مصادر عامة · لا يُعد عرضاً تجارياً</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="china-report.js?v=split1"></script>
+</body>
+</html>

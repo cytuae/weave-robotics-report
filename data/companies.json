@@ -1,0 +1,458 @@
+{
+  "updated": "2026-07-17",
+  "market": "Saudi Arabia",
+  "companies": [
+    {
+      "id": "picea",
+      "num": "01",
+      "name": "Picea Robotics",
+      "nameAr": "بيسيا روبوتيكس",
+      "nameCn": "深圳杉川机器人有限公司",
+      "slug": "picea",
+      "type": "ODM",
+      "typeAr": "تصميم وتصنيع عالمي",
+      "city": "Shenzhen",
+      "cityAr": "شنتشن",
+      "trust": "A",
+      "privateLabel": 9,
+      "floors": 9.5,
+      "specialty": 6,
+      "saudi": 8.5,
+      "priority": 1,
+      "path": "shortlist",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "معلن من الشركة / iRobot",
+      "summary": "أفضل مرشح تصميم وتصنيع لعلامة سعودية قابلة للنمو. زيارة إلزامية.",
+      "page": "china/picea.html",
+      "founded": "2016",
+      "sources": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "id": "mamibot",
+      "num": "02",
+      "name": "Mamibot",
+      "nameAr": "ماميبوت",
+      "nameCn": "Mamibot",
+      "slug": "mamibot",
+      "type": "OEM/ODM",
+      "typeAr": "مصنع/علامة متعددة الفئات",
+      "city": "Shanghai",
+      "cityAr": "شنغهاي",
+      "trust": "B",
+      "privateLabel": 8.5,
+      "floors": 7.5,
+      "specialty": 9,
+      "saudi": 8.5,
+      "priority": 2,
+      "path": "shortlist",
+      "categories": [
+        "floors",
+        "glass",
+        "solar",
+        "garden"
+      ],
+      "badgeNote": "معلن من الشركة",
+      "summary": "تنوع قوي: أرضيات وزجاج وألواح شمسية.",
+      "page": "china/mamibot.html",
+      "founded": "2013",
+      "sources": [
+        "s14",
+        "s15"
+      ]
+    },
+    {
+      "id": "royalmakers",
+      "num": "03",
+      "name": "Royalmakers",
+      "nameAr": "رويال ميكرز",
+      "nameCn": "Shenzhen Royalmakers",
+      "slug": "royalmakers",
+      "type": "OEM/ODM",
+      "typeAr": "تصنيع تعاقدي / تصميم وتصنيع",
+      "city": "Shenzhen",
+      "cityAr": "شنتشن",
+      "trust": "B",
+      "privateLabel": 9,
+      "floors": 7.5,
+      "specialty": 5,
+      "saudi": 8,
+      "priority": 3,
+      "path": "shortlist",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "معلن من الشركة — يحتاج تدقيق",
+      "summary": "مرشح تجربة أولية للعلامة الخاصة متوسطة التكلفة.",
+      "page": "china/royalmakers.html",
+      "founded": "",
+      "sources": [
+        "s16"
+      ]
+    },
+    {
+      "id": "klinsmann",
+      "num": "04",
+      "name": "Klinsmann",
+      "nameAr": "كلينسمان",
+      "nameCn": "Klinsmann",
+      "slug": "klinsmann",
+      "type": "OEM/ODM",
+      "typeAr": "تصنيع تعاقدي / تصميم وتصنيع",
+      "city": "Ningbo",
+      "cityAr": "نينغبو",
+      "trust": "B",
+      "privateLabel": 9,
+      "floors": 7,
+      "specialty": 4,
+      "saudi": 7.5,
+      "priority": 4,
+      "path": "shortlist",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "معلن من الشركة",
+      "summary": "مقارنة سعر/جودة مهمة في نينغبو.",
+      "page": "china/klinsmann.html",
+      "founded": "2008",
+      "sources": [
+        "s18"
+      ]
+    },
+    {
+      "id": "minfu",
+      "num": "05",
+      "name": "Minfu Technology",
+      "nameAr": "مينفو",
+      "nameCn": "Minfu",
+      "slug": "minfu",
+      "type": "OEM/ODM",
+      "typeAr": "تصنيع تعاقدي / تصميم وتصنيع مرن",
+      "city": "Shenzhen",
+      "cityAr": "شنتشن",
+      "trust": "B/C",
+      "privateLabel": 9,
+      "floors": 7,
+      "specialty": 6,
+      "saudi": 8,
+      "priority": 5,
+      "path": "shortlist",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "تقديري / معلن — تحقق مضاعف",
+      "summary": "مرونة في الحد الأدنى للطلب — مشروط بتدقيق المصنع وعينات.",
+      "page": "china/minfu.html",
+      "founded": "2021",
+      "sources": [
+        "s19"
+      ]
+    },
+    {
+      "id": "silver-star",
+      "num": "06",
+      "name": "Silver Star",
+      "nameAr": "سيلفر ستار",
+      "nameCn": "Silver Star",
+      "slug": "silver-star",
+      "type": "ODM",
+      "typeAr": "تصميم وتصنيع / تصنيع بمنصة تشغيل",
+      "city": "Shenzhen",
+      "cityAr": "شنتشن",
+      "trust": "B",
+      "privateLabel": 8,
+      "floors": 7.5,
+      "specialty": 4,
+      "saudi": 7.5,
+      "priority": 6,
+      "path": "shortlist",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "معلن من الشركة",
+      "summary": "بديل تصميم وتصنيع احتياطي ضمن القائمة المختصرة.",
+      "page": "china/silver-star.html",
+      "founded": "",
+      "sources": [
+        "s17"
+      ]
+    },
+    {
+      "id": "ecovacs",
+      "num": "07",
+      "name": "Ecovacs",
+      "nameAr": "إيكوفاكس",
+      "nameCn": "科沃斯",
+      "slug": "ecovacs",
+      "type": "Brand",
+      "typeAr": "علامة مدرجة",
+      "city": "Suzhou",
+      "cityAr": "سوتشو",
+      "trust": "A",
+      "privateLabel": 3,
+      "floors": 9,
+      "specialty": 8.5,
+      "saudi": 9,
+      "priority": 70,
+      "path": "agency",
+      "categories": [
+        "floors",
+        "glass",
+        "garden",
+        "pool"
+      ],
+      "badgeNote": "موثق بورصة",
+      "summary": "مسار وكالة فقط — WINBOT مرجع لزجاج النوافذ.",
+      "page": "china/ecovacs.html",
+      "founded": "1998",
+      "sources": [
+        "s4",
+        "s5"
+      ]
+    },
+    {
+      "id": "dreame",
+      "num": "08",
+      "name": "Dreame",
+      "nameAr": "دريمي",
+      "nameCn": "追觅科技",
+      "slug": "dreame",
+      "type": "Brand",
+      "typeAr": "علامة وتقنية",
+      "city": "Suzhou",
+      "cityAr": "سوتشو",
+      "trust": "A/B",
+      "privateLabel": 3,
+      "floors": 9.5,
+      "specialty": 8,
+      "saudi": 9,
+      "priority": 71,
+      "path": "agency",
+      "categories": [
+        "floors",
+        "garden",
+        "pool"
+      ],
+      "badgeNote": "معلن من الشركة",
+      "summary": "وكالة فاخرة — منافس لأي علامة سعودية.",
+      "page": "china/dreame.html",
+      "founded": "2015",
+      "sources": [
+        "s6",
+        "s7"
+      ]
+    },
+    {
+      "id": "roborock",
+      "num": "09",
+      "name": "Roborock",
+      "nameAr": "روبو روك",
+      "nameCn": "石头科技",
+      "slug": "roborock",
+      "type": "Brand",
+      "typeAr": "علامة فاخرة مدرجة",
+      "city": "Beijing",
+      "cityAr": "بكين",
+      "trust": "A",
+      "privateLabel": 2,
+      "floors": 9.5,
+      "specialty": 5,
+      "saudi": 9,
+      "priority": 72,
+      "path": "agency",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "موثق / أسعار تجزئة تقديرية",
+      "summary": "معيار مقارنة إلزامي + احتمال توزيع.",
+      "page": "china/roborock.html",
+      "founded": "",
+      "sources": [
+        "s8",
+        "s25"
+      ]
+    },
+    {
+      "id": "narwal",
+      "num": "10",
+      "name": "Narwal",
+      "nameAr": "ناروال",
+      "nameCn": "云鲸智能",
+      "slug": "narwal",
+      "type": "Brand",
+      "typeAr": "علامة فاخرة",
+      "city": "Dongguan",
+      "cityAr": "دونغقوان",
+      "trust": "B+",
+      "privateLabel": 2,
+      "floors": 9,
+      "specialty": 3,
+      "saudi": 8.5,
+      "priority": 73,
+      "path": "agency",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "أسعار تجزئة تقديرية",
+      "summary": "معيار مقارنة للمسح والمحطة · وكالة فاخرة.",
+      "page": "china/narwal.html",
+      "founded": "2016",
+      "sources": [
+        "s9",
+        "s25"
+      ]
+    },
+    {
+      "id": "midea",
+      "num": "11",
+      "name": "Midea",
+      "nameAr": "ميديا",
+      "nameCn": "美的集团",
+      "slug": "midea",
+      "type": "Group",
+      "typeAr": "مجموعة صناعية",
+      "city": "Foshan",
+      "cityAr": "فوشان",
+      "trust": "A",
+      "privateLabel": 7,
+      "floors": 7.5,
+      "specialty": 7,
+      "saudi": 8.5,
+      "priority": 74,
+      "path": "agency",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "موثق بورصة",
+      "summary": "شراكة مؤسسية عند وجود حجم سنوي.",
+      "page": "china/midea.html",
+      "founded": "",
+      "sources": [
+        "s10",
+        "s11"
+      ]
+    },
+    {
+      "id": "ilife",
+      "num": "12",
+      "name": "ILIFE",
+      "nameAr": "آي لايف",
+      "nameCn": "ILIFE",
+      "slug": "ilife",
+      "type": "Brand",
+      "typeAr": "علامة — خرجت من التصنيع التعاقدي",
+      "city": "Shenzhen",
+      "cityAr": "شنتشن",
+      "trust": "B+",
+      "privateLabel": 1,
+      "floors": 7.5,
+      "specialty": 4,
+      "saudi": 7,
+      "priority": 75,
+      "path": "agency",
+      "categories": [
+        "floors"
+      ],
+      "badgeNote": "تقرير 2026: لا تصنيع تعاقدي",
+      "summary": "توزيع فقط — لا تعتمد كمصنع علامة خاصة.",
+      "page": "china/ilife.html",
+      "founded": "",
+      "sources": [
+        "s12",
+        "s13"
+      ]
+    },
+    {
+      "id": "aiper",
+      "num": "13",
+      "name": "Aiper",
+      "nameAr": "آيبر",
+      "nameCn": "Aiper",
+      "slug": "aiper",
+      "type": "Brand",
+      "typeAr": "علامة مسابح",
+      "city": "Shenzhen",
+      "cityAr": "شنتشن",
+      "trust": "A/B",
+      "privateLabel": 2,
+      "floors": 1,
+      "specialty": 10,
+      "saudi": 9,
+      "priority": 76,
+      "path": "agency",
+      "categories": [
+        "pool"
+      ],
+      "badgeNote": "ادعاء شركة عبر Euromonitor",
+      "summary": "أولوية وكالة مسابح للفلل والاستراحات.",
+      "page": "china/aiper.html",
+      "founded": "",
+      "sources": [
+        "s20"
+      ]
+    },
+    {
+      "id": "wybot",
+      "num": "14",
+      "name": "WYBOT",
+      "nameAr": "وي بوت",
+      "nameCn": "WYBOT",
+      "slug": "wybot",
+      "type": "Brand/OEM",
+      "typeAr": "علامة/مصنع مسابح",
+      "city": "China",
+      "cityAr": "الصين",
+      "trust": "B",
+      "privateLabel": 5,
+      "floors": 1,
+      "specialty": 9,
+      "saudi": 8,
+      "priority": 77,
+      "path": "agency",
+      "categories": [
+        "pool"
+      ],
+      "badgeNote": "يحتاج فحص مصنع",
+      "summary": "مرشح لطلب عرض سعر واختبار — ليس اعتماداً مباشراً.",
+      "page": "china/wybot.html",
+      "founded": "",
+      "sources": [
+        "s21"
+      ]
+    },
+    {
+      "id": "mammotion",
+      "num": "15",
+      "name": "Mammotion",
+      "nameAr": "ماموشن",
+      "nameCn": "Mammotion",
+      "slug": "mammotion",
+      "type": "Brand",
+      "typeAr": "علامة حدائق",
+      "city": "Shenzhen",
+      "cityAr": "شنتشن",
+      "trust": "B+",
+      "privateLabel": 2,
+      "floors": 1,
+      "specialty": 9.5,
+      "saudi": 7,
+      "priority": 78,
+      "path": "agency",
+      "categories": [
+        "garden"
+      ],
+      "badgeNote": "وكالة حلول لا صندوق",
+      "summary": "تُباع مع تركيب ومسح موقع وصيانة.",
+      "page": "china/mammotion.html",
+      "founded": "",
+      "sources": [
+        "s1"
+      ]
+    }
+  ]
+}

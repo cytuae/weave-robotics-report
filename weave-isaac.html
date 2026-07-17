@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="تقرير خاص للرئيس علي الحربي — Weave Robotics وروبوت Isaac للمهام المنزلية 2026">
+  <title>تقرير Isaac · Weave Robotics — تقرير خاص للرئيس علي الحربي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=blue4">
+</head>
+<body>
+
+    <header class="header" id="header">
+    <nav class="nav container">
+      <a href="weave-isaac.html" class="nav__brand">
+        <span class="nav__brand-dot"></span>
+        <span>Weave Robotics</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+            <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html" class="nav__link">الرئيسية</a></li>
+        <li><a href="china-home-robotics.html" class="nav__link">الصين</a></li>
+        <li><a href="south-korea-home-robotics.html" class="nav__link">سيول</a></li>
+        <li><a href="weave-isaac.html" class="nav__link active" aria-current="page">تقرير Isaac</a></li>
+      </ul>
+      <a href="#isaac-media" class="nav__cta">محاور Isaac</a>
+    </nav>
+  </header>
+
+  <!-- 1. Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__badge">تقرير خاص للرئيس علي الحربي · 2026</div>
+      <h1 class="hero__title">تقرير خاص للرئيس علي الحربي<br><span>Weave Robotics</span></h1>
+      <p class="hero__desc">
+        شركة أمريكية ناشئة تطوّر روبوتات منزلية ذكية تعتمد على الرؤية الحاسوبية والتخطيط بالذكاء الاصطناعي،
+        بهدف أتمتة المهام اليومية داخل المنزل — من طي الملابس إلى ترتيب الغرف.
+      </p>
+      <div class="hero__stats">
+        <div class="stat-card glass">
+          <span class="stat-card__label">التأسيس</span>
+          <span class="stat-card__value">2024</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المقر</span>
+          <span class="stat-card__value">San Francisco, USA</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المجال</span>
+          <span class="stat-card__value">روبوتات منزلية بالذكاء الاصطناعي</span>
+        </div>
+        <div class="stat-card glass">
+          <span class="stat-card__label">المرحلة</span>
+          <span class="stat-card__value">Startup مبكرة</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. الملخص التنفيذي -->
+  <section class="section" id="summary">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">01</span>
+        <h2 class="section__title">الملخص التنفيذي</h2>
+      </div>
+      <div class="glass-card summary">
+        <p class="summary__lead">
+          <strong>Weave Robotics</strong> شركة تأسست عام 2024 في San Francisco، وتعمل على بناء جيل جديد من الروبوتات المنزلية
+          القادرة على تنفيذ مهام حقيقية — لا عروضاً تجريبية فقط.
+        </p>
+        <p>
+          تتميّز الشركة بتركيزها على حلّ مشكلة محددة: أتمتة الأعمال المنزلية الروتينية عبر منصة روبوتية متكاملة
+          (Full Stack Robotics)، بدءاً من <strong>Isaac 0</strong> لطي الملابس وجمع البيانات، وصولاً إلى
+          <strong>Isaac 1</strong> — روبوت متحرك بعجلات للمساعدة الشاملة في المنزل.
+        </p>
+        <p>
+          حصلت على دعم <strong>Y Combinator S24</strong> وتمويلاً مبكراً يقدّر بحوالي 500,000 دولار.
+          نموذجها التجاري يجمع بين الشراء الكامل والاشتراك الشهري، مع تسليم أولي متوقع في خريف 2026.
+          الشركة تتبنّى تصميمًا بعجلات بدلاً من الأرجل — قرار استراتيجي يقلّل التكلفة ويرفع الأمان والاستقرار
+          في بيئة منزلية.
+        </p>
+        <div class="summary__verdict">
+          <span class="summary__verdict-label">الحكم الأولي</span>
+          <p>شركة واعدة في مرحلة مبكرة، بفريق قوي وتمويل من أبرز مسرّعات العمل، لكنها تواجه منافسة شرسة
+          من لاعبين ممولين بمليارات الدولارات.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. نبذة عن الشركة -->
+  <section class="section section--alt" id="company">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">02</span>
+        <h2 class="section__title">نبذة عن الشركة</h2>
+      </div>
+      <div class="two-col">
+        <div class="glass-card">
+          <p>
+            تأسست <strong>Weave Robotics</strong> في عام 2024 بهدف جعل الروبوتات المنزلية عملية وقابلة للاستخدام
+            اليومي — لا مجرد تجارب تقنية. تركّز الشركة على دمج الرؤية الحاسوبية، التخطيط الذكي، والتحكم الروبوتي
+            في منصة واحدة متكاملة.
+          </p>
+          <p>
+            بدلاً من بناء روبوتات عامة متعددة الاستخدامات، تتبنّى Weave نهجاً تدريجياً: تبدأ بـ
+            <strong>Isaac 0</strong> لحلّ مهمة محددة (طي الملابس)، ثم توسّع القدرات عبر
+            <strong>Isaac 1</strong> ليشمل مجموعة أوسع من المهام المنزلية.
+          </p>
+          <p>
+            هذا النهج يسمح بجمع بيانات حقيقية عن تفاعل البشر مع الملابس والبيئة المنزلية،
+            ما يعزّز قدرات الذكاء الاصطناعي على المدى الطويل.
+          </p>
+        </div>
+        <div class="visual-block">
+          <span>Weave Robotics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. المؤسسون -->
+  <section class="section" id="founders">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">03</span>
+        <h2 class="section__title">المؤسسون</h2>
+      </div>
+      <div class="founders-grid">
+        <div class="glass-card founder-card">
+          <div class="founder-card__photo">
+            <img src="images/founders/kaan-dogrusoz.jpg" alt="Kaan Dogrusoz" loading="lazy">
+          </div>
+          <h3>Kaan Dogrusoz</h3>
+          <p class="founder-card__role">Co-Founder &amp; CTO</p>
+          <p>خريج Carnegie Mellon، عمل سابقاً في Apple كمدير أبحاث ML Robotics ومهندس iPhone —
+          يقود البنية التقنية والروبوتات في Weave Robotics.</p>
+        </div>
+        <div class="glass-card founder-card">
+          <div class="founder-card__photo">
+            <img src="images/founders/evan-wineland.jpg" alt="Evan Wineland" loading="lazy">
+          </div>
+          <h3>Evan Wineland</h3>
+          <p class="founder-card__role">Co-Founder &amp; CEO</p>
+          <p>خريج Carnegie Mellon، عمل سابقاً Lead AI PM في Apple (Siri وApple Intelligence) —
+          يقود المنتج والاستراتيجية التجارية لـ Weave Robotics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. المقر الرئيسي -->
+  <section class="section section--alt" id="hq">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">04</span>
+        <h2 class="section__title">المقر الرئيسي</h2>
+      </div>
+      <div class="glass-card hq-card">
+        <div class="hq-card__icon">📍</div>
+        <div>
+          <h3>San Francisco, California, USA</h3>
+          <p>
+            يقع المقر في قلب وادي Silicon Valley — أحد أبرز مراكز الابتكار التقني في العالم.
+            هذا الموقع يوفّر وصولاً مباشراً لمواهب الذكاء الاصطناعي والروبوتات،
+            بالإضافة إلى شبكة مستثمرين ومسرّعات أعمال رائدة مثل Y Combinator.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. التمويل والاستثمارات -->
+  <section class="section" id="funding">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">05</span>
+        <h2 class="section__title">التمويل والاستثمارات</h2>
+      </div>
+      <div class="funding-grid">
+        <div class="glass-card funding-stat">
+          <span class="funding-stat__label">التمويل المعلن</span>
+          <span class="funding-stat__value">~$500,000</span>
+        </div>
+        <div class="glass-card funding-stat">
+          <span class="funding-stat__label">المرحلة</span>
+          <span class="funding-stat__value">Early Stage / Pre-Seed</span>
+        </div>
+        <div class="glass-card funding-stat">
+          <span class="funding-stat__label">المسرّعة</span>
+          <span class="funding-stat__value">Y Combinator S24</span>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">2024</span>
+            <h4>تأسيس الشركة</h4>
+            <p>انطلاق Weave Robotics في San Francisco بهدف أتمتة المهام المنزلية.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">صيف 2024</span>
+            <h4>Y Combinator S24</h4>
+            <p>الانضمام إلى دفعة Y Combinator الصيفية وحصول على تمويل Pre-Seed.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">2025–2026</span>
+            <h4>تطوير المنتج والحجز المسبق</h4>
+            <p>إطلاق Isaac 0 وIsaac 1 مع برنامج حجز مسبق وتسليم أولي في خريف 2026.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. المستثمرون -->
+  <section class="section section--alt" id="investors">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">06</span>
+        <h2 class="section__title">المستثمرون</h2>
+      </div>
+      <div class="investors-grid">
+        <div class="glass-card investor-card">Y Combinator</div>
+        <div class="glass-card investor-card">Pioneer Fund</div>
+        <div class="glass-card investor-card">Nexus Venture Partners</div>
+        <div class="glass-card investor-card">Collide Capital</div>
+        <div class="glass-card investor-card">Summit Partners</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. المنتجات -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">07</span>
+        <h2 class="section__title">المنتجات</h2>
+      </div>
+      <div class="products-grid">
+        <div class="glass-card product-card">
+          <div class="visual-block visual-block--sm">
+            <span>Isaac 0</span>
+          </div>
+          <h3>Isaac 0</h3>
+          <p>
+            آلة مخصصة لطي الملابس وتجميع البيانات حول التعامل مع الملابس.
+            تمثّل نقطة الدخول الأولى للشركة — حلّ مركّز لمهمة واحدة يسمح بجمع بيانات
+            تدريبية قيّمة واختبار السوق قبل التوسع.
+          </p>
+        </div>
+        <div class="glass-card product-card">
+          <div class="visual-block visual-block--sm">
+            <span>Isaac 1</span>
+          </div>
+          <h3>Isaac 1</h3>
+          <p>
+            روبوت منزلي متحرك بعجلات، مخصص للمساعدة في الأعمال المنزلية:
+            ترتيب الغرف، التقاط الملابس، جمع الألعاب، نقل الأغراض، وطي الملابس.
+            يمثّل المنتج الرئيسي والرؤية الكاملة للشركة.
+          </p>
+        </div>
+      </div>
+      <div class="timeline timeline--products">
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">المرحلة 1</span>
+            <h4>Isaac 0 — طي الملابس</h4>
+            <p>حلّ متخصص يجمع بيانات ويثبت القدرة التقنية على مهمة محددة.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">المرحلة 2</span>
+            <h4>Isaac 1 — روبوت منزلي شامل</h4>
+            <p>توسيع القدرات لتشمل مهام منزلية متعددة عبر روبوت متحرك.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content glass-card">
+            <span class="timeline__date">خريف 2026</span>
+            <h4>التسليم الأولي</h4>
+            <p>بدء التسليم في كاليفورنيا ثم التوسع تدريجياً في أمريكا.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Isaac 1 — فيديو وتغطية -->
+  <section class="section section--alt" id="isaac-media">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">07+</span>
+        <h2 class="section__title">Isaac 1 — أهم المحاور</h2>
+        <p class="section__subtitle">
+          روبوت ناعم لطي الملابس دون محاكاة الشكل البشري — مستخرج من
+          <a href="https://www.designboom.com/technology/soft-robot-fold-laundry-weave-robotics-isaac-1/" target="_blank" rel="noopener">designboom</a>
+        </p>
+      </div>
+
+      <div class="media-spotlight">
+        <div class="media-spotlight__video glass-card">
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/m7pZr90BQw4?start=8&rel=0&modestbranding=1"
+              title="Weave Robotics — Isaac 1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p class="media-spotlight__video-caption">فيديو تعريفي — Isaac 1 من Weave Robotics</p>
+        </div>
+
+        <div class="highlights-grid">
+          <div class="glass-card highlight-card">
+            <span class="highlight-card__num">01</span>
+            <h3>روبوت ناعم بعجلات</h3>
+            <p>لا يسير على رجلين — يركّز على الوصول للأغراض والتنقل داخل الغرفة بقاعدة متحركة عملية.</p>
+          </div>
+          <div class="glass-card highlight-card">
+            <span class="highlight-card__num">02</span>
+            <h3>جسم قابل للطي</h3>
+            <p>يرتفع من 3 أقدام إلى 5 أقدام و9 بوصات حسب المهمة — سرير، طاولة، سلة ملابس أو خزانة.</p>
+          </div>
+          <div class="glass-card highlight-card">
+            <span class="highlight-card__num">03</span>
+            <h3>بصمة منزلية صغيرة</h3>
+            <p>مساحة أرضية 20.5 × 22 بوصة — أقرب لجهاز منزلي من روبوت بشري كامل الحجم.</p>
+          </div>
+          <div class="glass-card highlight-card">
+            <span class="highlight-card__num">04</span>
+            <h3>مدى وصول واسع</h3>
+            <p>80 بوصة عمودياً و38 بوصة أفقياً — يغطي معظم أسطح المنزل دون تقليد حركة الإنسان.</p>
+          </div>
+          <div class="glass-card highlight-card">
+            <span class="highlight-card__num">05</span>
+            <h3>غطاء قماشي ناعم</h3>
+            <p>قشرة قماشية قابلة للإزالة بألوان Sage وGray وSlate Blue وTerracotta وVesper — يبدو كقطعة أثاث.</p>
+          </div>
+          <div class="glass-card highlight-card">
+            <span class="highlight-card__num">06</span>
+            <h3>مهام الغسيل والترتيب</h3>
+            <p>يلتقط الملابس، يفرزها، يطويها، ويرتبها — مع التركيز على الغسيل كحالة الاستخدام الرئيسية.</p>
+          </div>
+          <div class="glass-card highlight-card">
+            <span class="highlight-card__num">07</span>
+            <h3>استقلالية + دعم عن بُعد</h3>
+            <p>يعمل باستقلالية في المهام اليومية، مع إمكانية التدخل عبر Teleoperation عند الحالات المعقدة.</p>
+          </div>
+          <div class="glass-card highlight-card">
+            <span class="highlight-card__num">08</span>
+            <h3>تحكم وتشغيل</h3>
+            <p>تطبيق للجدولة والاستدعاء — بطارية حتى 8 ساعات وشحن خلال ساعتين.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="media-gallery">
+        <figure class="media-gallery__item glass-card">
+          <img src="images/isaac-1/isaac-1-01.jpg" alt="Weave Robotics Isaac 1" loading="lazy">
+          <figcaption>Weave Robotics تقدّم Isaac 1 — روبوت منزلي متحرك للغسيل والترتيب</figcaption>
+        </figure>
+        <figure class="media-gallery__item glass-card">
+          <img src="images/isaac-1/isaac-1-02.jpg" alt="Isaac 1 wheeled base" loading="lazy">
+          <figcaption>قاعدة بعجلات بدلاً من الأرجل — تنقل عملي داخل المنزل</figcaption>
+        </figure>
+        <figure class="media-gallery__item glass-card">
+          <img src="images/isaac-1/isaac-1-03.jpg" alt="Isaac 1 adjustable height" loading="lazy">
+          <figcaption>يرتفع من 3 أقدام إلى 5'9" حسب مهمة العمل</figcaption>
+        </figure>
+        <figure class="media-gallery__item glass-card">
+          <img src="images/isaac-1/isaac-1-04.jpg" alt="Isaac 1 folding laundry" loading="lazy">
+          <figcaption>يلتقط الملابس ويطويها ويرتبها في الخزانة</figcaption>
+        </figure>
+        <figure class="media-gallery__item glass-card">
+          <img src="images/isaac-1/isaac-1-05.jpg" alt="Isaac 1 soft fabric shell" loading="lazy">
+          <figcaption>غطاء قماشي ناعم قابل للإزالة — يندمج مع ديكور المنزل</figcaption>
+        </figure>
+        <figure class="media-gallery__item glass-card">
+          <img src="images/isaac-1/isaac-1-06.jpg" alt="Isaac 1 teleoperation" loading="lazy">
+          <figcaption>تشغيل مستقل مع دعم Teleoperation عند الحاجة</figcaption>
+        </figure>
+        <figure class="media-gallery__item glass-card">
+          <img src="images/isaac-1/isaac-1-07.jpg" alt="Isaac 1 domestic interior" loading="lazy">
+          <figcaption>مصمّم للتحرك عبر الممرات والغرف المنزلية</figcaption>
+        </figure>
+        <figure class="media-gallery__item glass-card">
+          <img src="images/isaac-1/isaac-1-08.jpg" alt="Isaac 1 San Francisco" loading="lazy">
+          <figcaption>صُمّم وجُمّع في San Francisco</figcaption>
+        </figure>
+      </div>
+
+      <p class="media-credit">
+        الصور والمحتوى: <a href="https://www.designboom.com/technology/soft-robot-fold-laundry-weave-robotics-isaac-1/" target="_blank" rel="noopener">designboom — Weave Robotics Isaac 1</a>
+        · images via Weave Robotics
+      </p>
+    </div>
+  </section>
+
+  <!-- 9. التكنولوجيا -->
+  <section class="section section--alt" id="technology">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">08</span>
+        <h2 class="section__title">التكنولوجيا</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="glass-card tech-card">
+          <div class="tech-card__icon">👁</div>
+          <h3>Computer Vision</h3>
+          <p>رؤية حاسوبية متقدمة لفهم البيئة المنزلية والأجسام والملابس بدقة.</p>
+        </div>
+        <div class="glass-card tech-card">
+          <div class="tech-card__icon">🧠</div>
+          <h3>AI Planning</h3>
+          <p>تخطيط ذكي لتسلسل المهام المنزلية واتخاذ قرارات في الوقت الفعلي.</p>
+        </div>
+        <div class="glass-card tech-card">
+          <div class="tech-card__icon">⚙️</div>
+          <h3>Robotics Control</h3>
+          <p>تحكم روبوتي دقيق في الحركة والتعامل مع الأغراض اليومية.</p>
+        </div>
+        <div class="glass-card tech-card">
+          <div class="tech-card__icon">🎮</div>
+          <h3>Teleoperation</h3>
+          <p>تشغيل عن بُعد عند الحاجة لتدريب النماذج ومعالجة الحالات المعقدة.</p>
+        </div>
+        <div class="glass-card tech-card tech-card--wide">
+          <div class="tech-card__icon">🔗</div>
+          <h3>Full Stack Robotics</h3>
+          <p>منصة متكاملة تجمع البرمجيات والأجهزة والذكاء الاصطناعي في نظام واحد —
+          من جمع البيانات إلى تنفيذ المهام بشكل مستقل.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. لماذا لا يستخدم أرجل؟ -->
+  <section class="section" id="wheels">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">09</span>
+        <h2 class="section__title">لماذا لا يستخدم أرجل؟</h2>
+        <p class="section__subtitle">قرار تصميمي استراتيجي يميّز Weave عن معظم المنافسين</p>
+      </div>
+      <div class="wheels-grid">
+        <div class="glass-card wheels-card">
+          <span class="wheels-card__num">01</span>
+          <h3>أقل تكلفة</h3>
+          <p>أنظمة العجلات أبسط وأرخص في التصنيع والصيانة مقارنة بأرجل روبوتية معقدة.</p>
+        </div>
+        <div class="glass-card wheels-card">
+          <span class="wheels-card__num">02</span>
+          <h3>أكثر أمانًا</h3>
+          <p>حركة مستقرة ومتوقعة تقلّل مخاطر السقوط أو التصادم داخل المنزل.</p>
+        </div>
+        <div class="glass-card wheels-card">
+          <span class="wheels-card__num">03</span>
+          <h3>استقرار أعلى</h3>
+          <p>توازن أفضل على الأسطح المستوية التي تمثّل 95% من بيئة المنزل.</p>
+        </div>
+        <div class="glass-card wheels-card">
+          <span class="wheels-card__num">04</span>
+          <h3>استهلاك طاقة أقل</h3>
+          <p>كفاءة أعلى في الطاقة تمكّن من عمل أطول دون شحن متكرر.</p>
+        </div>
+        <div class="glass-card wheels-card wheels-card--wide">
+          <span class="wheels-card__num">05</span>
+          <h3>مناسب أكثر للمنازل</h3>
+          <p>البيئة المنزلية مسطحة بمعظمها — العجلات الخيار العملي الأمثل
+          بينما الأرجل حلّ مبالغ فيه تقنياً لمهام لا تتطلب تسلّقاً.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. نموذج العمل والأسعار -->
+  <section class="section section--alt" id="business">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">10</span>
+        <h2 class="section__title">نموذج العمل والأسعار</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">شراء كامل</span>
+          <span class="pricing-card__price">$7,999</span>
+          <p>ملكية كاملة للروبوت مع دعم فني وتحديثات برمجية.</p>
+        </div>
+        <div class="glass-card pricing-card pricing-card--featured">
+          <span class="pricing-card__badge">الأكثر مرونة</span>
+          <span class="pricing-card__type">اشتراك شهري</span>
+          <span class="pricing-card__price">$449<span>/شهر</span></span>
+          <p>وصول للروبوت بدون التزام شراء كامل — نموذج Hardware-as-a-Service.</p>
+        </div>
+        <div class="glass-card pricing-card">
+          <span class="pricing-card__type">عربون حجز</span>
+          <span class="pricing-card__price">$250</span>
+          <p>حجز مسبق لضمان مكان في قائمة التسليم الأولى.</p>
+        </div>
+      </div>
+      <div class="glass-card delivery-note">
+        <div class="delivery-note__item">
+          <strong>التسليم الأولي المتوقع</strong>
+          <span>خريف 2026</span>
+        </div>
+        <div class="delivery-note__divider"></div>
+        <div class="delivery-note__item">
+          <strong>استراتيجية الإطلاق</strong>
+          <span>البداية في كاليفورنيا → التوسع في أمريكا</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. المنافسون -->
+  <section class="section" id="competitors">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">11</span>
+        <h2 class="section__title">المنافسون</h2>
+        <p class="section__subtitle">مقارنة استراتيجية بين Weave Robotics واللاعبين الرئيسيين</p>
+      </div>
+      <div class="table-wrap glass-card">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>الشركة</th>
+              <th>التمويل</th>
+              <th>التركيز</th>
+              <th>الحركة</th>
+              <th>المرحلة</th>
+              <th>السعر التقريبي</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="compare-table__highlight">
+              <td><strong>Weave Robotics</strong></td>
+              <td>~$500K</td>
+              <td>منزلي · طي ملابس</td>
+              <td>عجلات</td>
+              <td>Pre-Seed</td>
+              <td>$7,999 / $449/mo</td>
+            </tr>
+            <tr>
+              <td>Tesla Optimus</td>
+              <td>تمويل ذاتي (Tesla)</td>
+              <td>عام · صناعي</td>
+              <td>أرجل</td>
+              <td>تطوير</td>
+              <td>غير معلن</td>
+            </tr>
+            <tr>
+              <td>Figure AI</td>
+              <td>$675M+</td>
+              <td>عام · مصنع</td>
+              <td>أرجل</td>
+              <td>Series B</td>
+              <td>غير معلن</td>
+            </tr>
+            <tr>
+              <td>1X Technologies</td>
+              <td>$125M+</td>
+              <td>أمن · منزلي</td>
+              <td>أرجل</td>
+              <td>Series B</td>
+              <td>اشتراك</td>
+            </tr>
+            <tr>
+              <td>Unitree</td>
+              <td>ربحية جزئية</td>
+              <td>عام · بحث</td>
+              <td>أرجل</td>
+              <td>ناضجة</td>
+              <td>$16K–$90K</td>
+            </tr>
+            <tr>
+              <td>LimX Dynamics</td>
+              <td>$200M+</td>
+              <td>عام · صناعي</td>
+              <td>أرجل</td>
+              <td>Series A</td>
+              <td>غير معلن</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. SWOT -->
+  <section class="section section--alt" id="swot">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">12</span>
+        <h2 class="section__title">تحليل SWOT</h2>
+      </div>
+      <div class="swot-grid">
+        <div class="glass-card swot-card swot-card--s">
+          <h3>نقاط القوة</h3>
+          <ul>
+            <li>تركيز واضح على حالة استخدام محددة (طي الملابس)</li>
+            <li>فريق مؤسس تقني قوي مع دعم Y Combinator</li>
+            <li>تصميم بعجلات — عملي وأقل تكلفة</li>
+            <li>نموذج تسعير مرن (شراء + اشتراك)</li>
+            <li>جمع بيانات تدريبية فريدة عبر Isaac 0</li>
+          </ul>
+        </div>
+        <div class="glass-card swot-card swot-card--w">
+          <h3>نقاط الضعف</h3>
+          <ul>
+            <li>تمويل محدود (~$500K) مقارنة بالمنافسين</li>
+            <li>مرحلة مبكرة — المنتج لم يُسلّم بعد</li>
+            <li>فريق صغير يواجه تحديات التوسع</li>
+            <li>اعتماد على سوق أمريكي محدود جغرافياً</li>
+          </ul>
+        </div>
+        <div class="glass-card swot-card swot-card--o">
+          <h3>الفرص</h3>
+          <ul>
+            <li>سوق الروبوتات المنزلية في نمو متسارع</li>
+            <li>نقص حلول عملية وليس تجريبية فقط</li>
+            <li>نموذج الاشتراك يخفّض حاجز الدخول للمستهلك</li>
+            <li>بيانات الملابس أصل استراتيجي نادر</li>
+            <li>توسع جغرافي تدريجي ممكن بعد كاليفورنيا</li>
+          </ul>
+        </div>
+        <div class="glass-card swot-card swot-card--t">
+          <h3>المخاطر</h3>
+          <ul>
+            <li>منافسة شرسة من لاعبين بمليارات التمويل</li>
+            <li>تأخير التسليم قد يفقد ثقة السوق</li>
+            <li>تبنّي المستهلك للروبوتات المنزلية لا يزال مبكراً</li>
+            <li>تحديات تقنية في الموثوقية داخل المنزل</li>
+            <li>تقلبات اقتصادية قد تؤثر على الإنفاق الاستهلاكي</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. تقييم نهائي -->
+  <section class="section" id="assessment">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">13</span>
+        <h2 class="section__title">التقييم النهائي</h2>
+      </div>
+      <div class="assessment-grid">
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>الابتكار</span>
+            <span class="assessment-card__score" data-score="82">82%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="82"></div></div>
+          <p>نهج Full Stack Robotics مع تركيز على بيانات الملابس — تميّز تقني حقيقي.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>جاهزية السوق</span>
+            <span class="assessment-card__score" data-score="58">58%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="58"></div></div>
+          <p>الطلب موجود لكن تبنّي الروبوتات المنزلية لا يزال في مرحلة مبكرة.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>القوة المالية</span>
+            <span class="assessment-card__score" data-score="35">35%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="35"></div></div>
+          <p>تمويل Pre-Seed محدود — يحتاج جولة Series A لمواكبة المنافسة.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>مستوى المخاطرة</span>
+            <span class="assessment-card__score" data-score="72">72%</span>
+          </div>
+          <div class="progress-bar progress-bar--risk"><div class="progress-bar__fill" data-width="72"></div></div>
+          <p>مخاطرة عالية — مرحلة مبكرة، منافسة قوية، منتج غير مُسلّم بعد.</p>
+        </div>
+        <div class="glass-card assessment-card">
+          <div class="assessment-card__header">
+            <span>فرص النمو</span>
+            <span class="assessment-card__score" data-score="75">75%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-bar__fill" data-width="75"></div></div>
+          <p>سوق واسع ونموذج اشتراك جذاب — إذا نجح التسليم الأولي.</p>
+        </div>
+      </div>
+      <div class="glass-card final-verdict">
+        <h3>الخلاصة</h3>
+        <p>
+          <strong>Weave Robotics</strong> شركة واعدة بتقنية متميزة ونهج عملي، لكنها في مرحلة
+          High Risk / High Reward. نجاحها يعتمد على التسليم في الموعد،
+          إثبات الموثوقية في المنزل، وجولة تمويلية تالية. مناسبة للمتابعة
+          وليس للاستثمار الكبير في هذه المرحلة.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. المصادر -->
+  <section class="section section--alt" id="sources">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">14</span>
+        <h2 class="section__title">المصادر</h2>
+      </div>
+      <div class="sources-grid">
+        <div class="glass-card source-card">
+          <span class="source-card__icon">🌐</span>
+          <h4>الموقع الرسمي</h4>
+          <p>weave.ai</p>
+        </div>
+        <div class="glass-card source-card">
+          <span class="source-card__icon">🚀</span>
+          <h4>Y Combinator</h4>
+          <p>yc.com/companies/weave</p>
+        </div>
+        <div class="glass-card source-card">
+          <span class="source-card__icon">📊</span>
+          <h4>Sacra</h4>
+          <p>sacra.co/c/weave-robotics</p>
+        </div>
+        <div class="glass-card source-card">
+          <span class="source-card__icon">📰</span>
+          <h4>designboom</h4>
+          <p>Isaac 1 Coverage</p>
+        </div>
+        <div class="glass-card source-card">
+          <span class="source-card__icon">▶</span>
+          <h4>YouTube</h4>
+          <p>Isaac 1 Video</p>
+        </div>
+        <div class="glass-card source-card">
+          <span class="source-card__icon">📰</span>
+          <h4>TechRadar</h4>
+          <p>techradar.com</p>
+        </div>
+        <div class="glass-card source-card">
+          <span class="source-card__icon">🤖</span>
+          <h4>The Robot Report</h4>
+          <p>therobotreport.com</p>
+        </div>
+        <div class="glass-card source-card">
+          <span class="source-card__icon">𝕏</span>
+          <h4>X / Twitter</h4>
+          <p>@weaverobotics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__brand-dot"></span>
+        <span>تقرير Isaac · Weave Robotics — للرئيس علي الحربي</span>
+      </div>
+      <p class="footer__copy">© 2026 · تقرير داخلي · جميع البيانات من مصادر عامة</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

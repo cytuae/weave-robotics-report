@@ -8,11 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css?v=blue4">
   <style>
     .dd-badge { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .9rem; border-radius: 999px; background: var(--accent-subtle); color: var(--accent); font-size: .85rem; font-weight: 700; margin: 0 .25rem .5rem 0; }
     .dd-flag { display: inline-flex; align-items: center; padding: .35rem .75rem; border-radius: 999px; border: 1px solid var(--border-strong); color: var(--text-secondary); font-size: .82rem; font-weight: 700; margin: .2rem; }
-    .dd-flag--ok { background: rgba(45, 74, 62, .09); color: var(--accent); border-color: rgba(45, 74, 62, .18); }
+    .dd-flag--ok { background: rgba(26, 79, 140, .09); color: var(--accent); border-color: rgba(26, 79, 140, .18); }
     .dd-flag--warn { background: rgba(154, 139, 111, .13); color: #746346; border-color: rgba(154, 139, 111, .24); }
     .dd-flag--risk { background: rgba(141, 52, 52, .09); color: #8d3434; border-color: rgba(141, 52, 52, .18); }
     .dd-meta { display: grid; gap: .75rem; margin-top: 1rem; color: var(--text-secondary); }
@@ -25,7 +25,7 @@
 </head>
 <body class="has-report-bar">
 
-    <header class="header" id="header">
+      <header class="header" id="header">
     <nav class="nav container">
       <a href="../south-korea-home-robotics.html" class="nav__brand">
         <span class="nav__brand-dot"></span>
@@ -34,27 +34,13 @@
       <button class="nav__toggle" id="navToggle" aria-label="فتح القائمة">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav__menu" id="navMenu">
-        <li><a href="../index.html" class="nav__link">Weave Robotics</a></li>
-        <li><a href="../south-korea-home-robotics.html" class="nav__link">فهرس سيول</a></li>
-        <li class="nav__item--dropdown">
-          <button type="button" class="nav__link nav__dropdown-btn" aria-expanded="false">تقارير الشركات</button>
-          <ul class="nav__dropdown">
-            <li class="nav__dropdown-label">Due Diligence · قبل الزيارة</li>
-            <li><a href="rlwrld.html">01 · RLWRLD</a></li>
-            <li><a href="hyundai-robotics-lab.html" class="active">02 · Hyundai LAB</a></li>
-            <li><a href="neubility.html">03 · Neubility</a></li>
-            <li><a href="robotis.html">04 · ROBOTIS</a></li>
-            <li><a href="robocare.html">05 · RoboCare</a></li>
-            <li><a href="hyodol.html">06 · Hyodol</a></li>
-          </ul>
-        </li>
-        <li><a href="#identity" class="nav__link">الهوية</a></li>
-        <li><a href="#funding" class="nav__link">التمويل</a></li>
-        <li><a href="#products" class="nav__link">المنتجات</a></li>
-        <li><a href="#visit" class="nav__link active">الزيارة</a></li>
+            <ul class="nav__menu" id="navMenu">
+        <li><a href="../index.html" class="nav__link">الرئيسية</a></li>
+        <li><a href="../china-home-robotics.html" class="nav__link">الصين</a></li>
+        <li><a href="../south-korea-home-robotics.html" class="nav__link active" aria-current="page">سيول</a></li>
+        <li><a href="../weave-isaac.html" class="nav__link">تقرير Isaac</a></li>
       </ul>
-      <a href="../south-korea-home-robotics.html#due-diligence" class="nav__cta">كل التقارير</a>
+      <a href="../south-korea-home-robotics.html" class="nav__cta">سيول</a>
     </nav>
   </header>
 
@@ -129,11 +115,11 @@
           </div>
         </div>
         <div class="glass-card hq-card">
-          <div class="hq-card__icon">HQ</div>
+          <div class="hq-card__icon">المقر</div>
           <div>
             <h3>العناوين والزيارة</h3>
             <p>
-              تظهر عناوين منشورة في مصادر عامة وثانوية مرتبطة بـ Hyundai Motor Company HQ في Seocho
+              تظهر عناوين منشورة في مصادر عامة وثانوية مرتبطة بـ Hyundai Motor Company المقر في Seocho
               مثل 12 Heolleung-ro، كما تربط بعض الأدلة الصناعية Robotics LAB بمنطقة Uiwang عند
               37 Cheoldobangmulgwan-ro.
             </p>
@@ -329,8 +315,8 @@
           <li>ما الشروط التجارية لـ MobED Basic/Pro: بيع، إيجار، RaaS، أم مشروع مخصص؟</li>
           <li>هل DAL-e وDAL-e Delivery متاحان للترخيص خارج كوريا، أم فقط ضمن مشاريع HMG؟</li>
           <li>ما متطلبات التكامل مع المصاعد، بوابات الدخول، أنظمة الأمن، وأنظمة إدارة المباني في الخليج؟</li>
-          <li>هل توجد نية لشراكة GCC أو وكيل محلي أو مشروع مشترك JV؟ ومن صاحب القرار داخل المجموعة؟</li>
-          <li>ما مستويات الدعم، الضمان، قطع الغيار، وSLA المطلوبة لتشغيل متعدد المواقع؟</li>
+          <li>هل توجد نية لشراكة دول الخليج أو وكيل محلي أو مشروع مشترك JV؟ ومن صاحب القرار داخل المجموعة؟</li>
+          <li>ما مستويات الدعم، الضمان، قطع الغيار، واتفاقية مستوى الخدمة المطلوبة لتشغيل متعدد المواقع؟</li>
         </ol>
       </div>
     </div>
