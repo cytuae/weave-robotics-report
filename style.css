@@ -2120,7 +2120,8 @@ body.has-report-bar .hero {
   padding: 1.35rem;
   display: flex;
   flex-direction: column;
-  gap: 0.45rem;
+  gap: 0.65rem;
+  min-height: 100%;
   transition: var(--transition);
 }
 
@@ -2145,6 +2146,34 @@ body.has-report-bar .hero {
   font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.55;
+}
+
+.cr-hub-card__more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.7rem 1.15rem;
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: var(--transition);
+}
+
+.cr-hub-card:hover .cr-hub-card__more,
+.cr-hub-card:focus-visible .cr-hub-card__more,
+.hub-report:hover .cr-hub-card__more,
+.hub-report:focus-visible .cr-hub-card__more {
+  background: var(--accent-light);
+}
+
+.hub-report .cr-hub-card__more {
+  margin-top: 0.85rem;
 }
 
 .cr-page-hero {
