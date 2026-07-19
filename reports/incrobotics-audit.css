@@ -1,9 +1,24 @@
 /* INC Robotics Website Audit — scoped styles */
 
 /* Centered page title in header: تدقيق */
+body.inc-audit {
+  --header-h: 88px;
+}
+
+.header--inc-audit {
+  height: auto;
+  min-height: calc(var(--header-h) + env(safe-area-inset-top, 0px));
+  padding-top: env(safe-area-inset-top, 0px);
+  align-items: stretch;
+}
+
 .header--inc-audit .nav {
   position: relative;
   justify-content: space-between;
+  align-items: center;
+  min-height: var(--header-h);
+  padding-block: 1rem;
+  width: 100%;
 }
 
 .header--inc-audit .inc-header-title {
@@ -12,7 +27,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  padding: 0 0.5rem;
+  padding: 0.15rem 0.5rem 0;
   max-width: min(72vw, 520px);
   font-family: "Tajawal", "IBM Plex Sans Arabic", sans-serif;
   font-size: 18px;
@@ -36,6 +51,14 @@
 }
 
 @media (max-width: 900px) {
+  body.inc-audit {
+    --header-h: 84px;
+  }
+
+  .header--inc-audit .nav {
+    padding-block: 1.15rem 1rem;
+  }
+
   .header--inc-audit .nav__brand--quiet .nav__brand-text {
     display: none;
   }
