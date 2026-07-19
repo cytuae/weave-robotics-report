@@ -1,4 +1,51 @@
 /* INC Robotics Website Audit — scoped styles */
+
+/* Centered page title in header: تدقيق */
+.header--inc-audit .nav {
+  position: relative;
+  justify-content: space-between;
+}
+
+.header--inc-audit .inc-header-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0 0.5rem;
+  max-width: min(72vw, 520px);
+  font-family: "Tajawal", "IBM Plex Sans Arabic", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+  text-align: center;
+  color: var(--inc-navy, #081526);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.header--inc-audit .nav__brand--quiet .nav__brand-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary, #64748b);
+}
+
+.header--inc-audit.scrolled .inc-header-title {
+  color: #081526;
+}
+
+@media (max-width: 900px) {
+  .header--inc-audit .nav__brand--quiet .nav__brand-text {
+    display: none;
+  }
+
+  .header--inc-audit .inc-header-title {
+    font-size: 18px;
+    max-width: min(62vw, 320px);
+  }
+}
+
 .inc-audit {
   --inc-navy: #081526;
   --inc-blue: #2563eb;
@@ -18,8 +65,10 @@
   background: var(--inc-gray);
   overflow-x: clip;
   font-size: 18px;
-  line-height: 1.75;
+  line-height: 1.8;
   font-family: "Tajawal", "IBM Plex Sans Arabic", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 .inc-audit *,
