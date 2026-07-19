@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>مثال الموقع المستقبلي — INC Robotics</title>
+  <meta name="description" content="معاينة بصرية عالية الجودة لكيف يجب أن يبدو موقع INC Robotics على الموبايل بعد إعادة البناء.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#060b16">
+  <link rel="preload" as="image" href="assets/incrobotics-future-mobile.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #060b16;
+      --blue: #0066ff;
+      --white: #ffffff;
+      --muted: rgba(255, 255, 255, 0.72);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--navy);
+      color: var(--white);
+      font-family: "Tajawal", sans-serif;
+      min-height: 100%;
+      overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .future-bar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.7rem 0.9rem;
+      padding-top: calc(0.7rem + env(safe-area-inset-top));
+      background: rgba(6, 11, 22, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .future-bar__back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      min-height: 40px;
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .future-bar__meta {
+      flex: 1;
+      min-width: 0;
+      text-align: center;
+    }
+
+    .future-bar__meta strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .future-bar__meta span {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+    }
+
+    .future-bar__badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #9ec1ff;
+      background: rgba(0, 102, 255, 0.18);
+      border: 1px solid rgba(0, 102, 255, 0.45);
+      border-radius: 999px;
+      padding: 0.35rem 0.6rem;
+      white-space: nowrap;
+    }
+
+    .future-stage {
+      width: 100%;
+      max-width: 430px;
+      margin: 0 auto;
+      background: #0a0f1a;
+      min-height: calc(100vh - 58px);
+      min-height: calc(100dvh - 58px);
+    }
+
+    .future-stage picture,
+    .future-stage img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .future-stage img {
+      image-rendering: auto;
+      -webkit-user-drag: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        background:
+          radial-gradient(circle at 20% 10%, rgba(0, 102, 255, 0.18), transparent 35%),
+          radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.12), transparent 40%),
+          var(--navy);
+      }
+
+      .future-bar {
+        max-width: 430px;
+        margin: 0.75rem auto 0;
+        border-radius: 16px 16px 0 0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .future-stage {
+        margin-top: 0;
+        border-radius: 0 0 16px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: none;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+        overflow: hidden;
+      }
+
+    }
+
+    @media (min-width: 1024px) {
+      .future-bar,
+      .future-stage {
+        max-width: 460px;
+      }
+    }
+
+    @media print {
+      .future-bar { display: none; }
+      .future-stage { max-width: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="future-bar">
+    <a class="future-bar__back" href="./">← رجوع للتقرير</a>
+    <div class="future-bar__meta">
+      <strong>مثال الموقع المستقبلي</strong>
+      <span>اتجاه فاتح · ألوان INC · تعديل أقل</span>
+    </div>
+    <span class="future-bar__badge">FUTURE</span>
+  </header>
+
+  <main class="future-stage" id="main">
+    <picture>
+      <source srcset="assets/incrobotics-future-mobile.webp" type="image/webp">
+      <source srcset="assets/incrobotics-future-mobile.jpg" type="image/jpeg">
+      <img
+        src="assets/incrobotics-future-mobile.png"
+        alt="مثال عالي الجودة لواجهة موقع INC Robotics المستقبلية على الموبايل"
+        width="1290"
+        height="1935"
+        decoding="async"
+        fetchpriority="high"
+      >
+    </picture>
+  </main>
+
+</body>
+</html>
